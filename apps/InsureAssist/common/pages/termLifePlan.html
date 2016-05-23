@@ -1,0 +1,272 @@
+<div data-role="header" class="ui-header ia-header" data-theme="d" data-position="fixed" data-tap-toggle="false">
+
+    <a href="#quote" class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">{{BackBtnLabel}}</a>
+    <h1 class="dashboard-header-text ia-title">{{TermLifePlanLabel}}</h1>
+    <div data-role='control-group' data-type="horizontal" class="ui-btn-right ia-btn-right  ia-header-control-group" data-inline="true" data-position="inline">
+        <a href="#" data-role="button" data-icon="notification" data-iconpos="none"></a>
+        <a href="#" data-role="button" data-icon="none" data-iconpos="none" class="dashboard-header-user-name">{{UsernameLabel}}</a>        
+    </div>
+      
+</div>
+
+
+<div data-role="content" class="ui-content">
+
+	<div id="trmlp_sidebar_container" class="app-sidebar"></div>
+	
+	<div data-role="navbar" class="fragment-navbar" id="frgmt-navbar">
+		<ul>
+			 <li><a href="#" class="ui-btn-active nav-element">{{KeyFeaturesAndBenefitsLabel}}</a></li>
+			  <li><a href="#" class="nav-element">{{PremiumCalculatorLabel}}</a></li>
+		</ul>
+	</div>
+	
+	<div id="retirements-pension" class="ui-grid-a">
+
+            <div class="ui-block-a retriements-left-section" id="retirements-pension-left-section">
+
+                <div class="basic-info">
+
+                    <label class="rtrmt-basic-info-label">{{BasicInformationLabel}}</label>
+                    <a href=#userdetails><label class="rtmt-basic-info-edit-label">{{EditLabel}}</label></a>
+
+                </div>
+                
+             <div id="termplan_mid_section" class="term-plan-mid-section">
+
+             	<div class="ui-grid-a gender-smoker-info">
+                    
+                    <div class="ui-block-a">
+                     		<label class="retirement-info-label2">{{GenderLabel}}</label>
+								<div data-role="controlgroup" data-type="horizontal" class="gender-icons" id="gender-icons-trmpln">                              
+                                  	<a  id="male-icon-trmpln" href="#" data-role="button" data-icon="male" class="ui-state-persist"data-iconpos="none"></a>
+                                    <a id="female-icon-trmpln" href="#" data-role="button" data-icon="female"class="ui-state-persist" data-iconpos="none"></a>
+                                </div> 
+                      </div>
+
+                      <div class="ui-block-b">
+                      		<label class="retirement-info-label2">{{SmokerNonSmokerLabel}}</label>
+                            	<div data-role="controlgroup" data-type="horizontal" class="smoker-icons" id="smoker-icons-1">
+                            		<a id="nonsmoker-icon" href="#" data-role="button" data-icon="nonsmoker"class="ui-state-persist" data-iconpos="none"></a>                              
+                                	<a  id="smoker-icon" href="#" data-role="button" data-icon="smoker" class="ui-state-persist"data-iconpos="none"></a>
+                        		</div>   
+                     </div>
+            
+                </div>
+                
+                
+                <div class="ui-grid-a dob-premFreq-info">
+
+                        <div class="ui-block-a">
+                            <label class="retirement-info-label2">{{DateofBirthLabel}}</label>
+                            <div class="dob-cal calendar-img">
+                            <input type="date" id="tp-dob">
+                            </div>
+                        </div>
+
+                        <div class="ui-block-b">
+                        	<label class="retirement-info-label2">{{PremiumFrequencyLabel}}</label>
+								<div class="premFrequency">
+									<select name="select-frequency" id="select-prm-frequency" class="ui-icon-carat-d">
+									      <option value="Yearly">{{YearlyLabel}}</option>
+									      <option value="Half-Yearly">{{HalfYearlyLabel}}</option>
+									      <option value="Quarterly">{{QuarterlyLabel}}</option>
+									      <option value="Monthly">{{MonthlyLabel}}</option>
+									      
+									</select>
+								</div>
+                        </div>
+
+				</div>
+                    
+				<div class="life-cover-upto">
+                        <label class="retirement-info-label">{{LifeCoverUptoLabel}}</label>
+                        
+                      		<div data-role="rangeslider" class="custom-slider" id="lifecover-upto">
+
+                                <input name="range-1a" id="range-1a"  min="18" max="75" value="31" type="range" />
+
+                                <input name="range-1b" id="range-1b"  min="18" max="75" value="60" type="range" />
+                            </div>
+                            
+                            <div class="ui-grid-b scale-details">
+                        
+                         		<div class="ui-block-a"> <label class="retrPlan-scale-starts-1">{{ MinAgeLabel}}</label>	</div>
+                         		
+                         		<div class="ui-block-b">
+                         			<label class="retrPlan-sldr-range">{{PolicyTermLabel}}<span id="term-yrs"></span></label>
+                   				 </div>
+                         		
+                         		<div class="ui-block-c"> <label class="retrPlan-scale-ends-1">{{ MaxAgeLabel}}</label> </div>
+                        	
+                        	</div>
+                        
+                    </div>
+                    
+                    <div class="life-cover">
+                        <label class="retirement-info-label">{{LifeCoverLabel}}</label>
+              				<div class="custom-slider" id="sldr-lifecover">
+              					<label for="slider-lifecover"></label>
+                        		<input type="range" name="slider-1" id="slider-lifecover" data-mini="true" data-highlight="true" value="50" min="11" max="1000" />
+                        	</div>
+                        
+                        <div class="ui-grid-b scale-details-1">
+                        
+                         	<div class="ui-block-a"> <label class="retrPlan-scale-starts">{{MinAmountLabel}}</label> </div>
+                         	<div class="ui-block-b sldr-range-lbl"> <label id="lifecover-retrPlan-sldr-range" class="retrPlan-sldr-range"><span id="life-cover"></span></label> </div>
+                         	<div class="ui-block-c"> <label class=" retrPlan-scale-ends">{{MaxAmountLabel}}</label> </div>
+                        	
+                        </div>
+                  
+                   </div> 
+                  	<div id="add-rider-checkbox">
+                    <label class="cust-checkbox" >
+        				<input id="riderChkbox" type="checkbox" name="checkbox-add-rider">{{AddRiderLabel}}
+    				</label> 
+    				</div>
+    				<div id="termplan-bottom-section">
+    					
+    				<label class="retirement-info-label">{{AddRiderLabel}}</label>
+    				
+    				<label class="cust-checkbox" for="critical-chkbox">
+        				<input type="checkbox" name="checkbox-critical-illness" id="critical-chkbox" value="critical-checkbox">{{CriticalIllnessLabel}}
+    				</label>
+    				
+    				<div class="ui-grid-a policyterm-cover-info">
+                    
+                    <div class="ui-block-a">
+                     		<label class="policyterm-info-label">{{PolicyTermLabel}}</label>
+								<div class="premFrequency">
+									<select name="select-choice-1" id="select-policyTerm" class="ui-icon-carat-d">
+									      <option value="10 Years">{{Term1Label}}</option>
+									      <option value="15 Years">{{Term2Label}}</option>
+									      <option value="20 Years">{{Term3Label}}</option>
+									      <option value="25 Years">{{Term4Label}}</option>
+									 </select>
+								</div> 
+                      </div>
+
+                      <div class="ui-block-b">
+                      
+                      		<label class="policyterm-info-label">{{CoverLabel}}</label>
+                      		<div class="custom-slider">
+                        		<input type="range" name="slider-1" id="sldr-cover" data-mini="true" data-highlight="true" value="15" min="1" max="50" />
+                        	</div>
+                        
+                        	<div class="ui-grid-b scale-details-cover">
+                        
+                         	<div class="ui-block-a"> <label class="retrPlan-scale-starts">{{CoverMinAmount}}</label> </div>
+                         	<div class="ui-block-b sldr-range-lbl"> <label class="termplan-sldr-range"><span id="cover-amt"></span></label> </div>
+                         	<div class="ui-block-c"> <label class=" retrPlan-scale-ends">{{CoverMaxAmount}}</label> </div>
+                        	
+                        	</div>   
+                     	</div>
+              		</div>
+              		
+              		<label class="cust-checkbox">
+        				<input type="checkbox" name="checkbox-critical-illness" id="accident-chkbox">{{AccidentLabel}}
+    				</label>
+    				</div>
+ 			</div>
+ 			
+ 			<div id="tp-calculate-btn" class="contn-btn">
+                <a href="#" data-role="button" id="tp-calculate-btn" class="ia-btn-continue">{{CalculateLabel}}</a>
+        	</div>
+	
+		</div>
+		
+	<div class="ui-block-b termplan-right-section" id="term-plan-right-section">
+    		
+    		<div id="termplan-right-block-1" class="termplan-premium-info">
+        		<label for="premiumlbl-1" class="termplan-premium-label-1">{{YearlyPremiumLabel}}</label>
+        		<label for="premiumlbl-2" class="termplan-premium-label-2"></label>
+    		</div>
+    		
+    		<div id="term-plan-right-block-2" class="ui-grid-a termplan-right-block-2 ">
+    		
+    			<div class="ui-grid-c termplan-premium-info-hdr">
+    				<div class="ui-block-a override-block-a-prm-info"></div>
+    				<div class="ui-block-b override-block-b-prm-info">
+    					<label class="termplan-premium-info-label">{{TermLabel}}</label>
+    				</div>
+    				<div class="ui-block-c override-block-c-prm-info">
+    					<label class="termplan-premium-info-label">{{SumAssuredLabel}}</label>
+    				</div>
+    				<div class="ui-block-d override-block-d-prm-info">
+    					<label class="termplan-premium-info-label-3">{{PremiumLabel}}</label>
+    				</div>
+    			
+    			</div>
+    			
+    			<div class="ui-grid-c termplan-premium-info-details-1">
+    				<div class="ui-block-a override-block-a-prm-info">
+    					<label class="termplan-premium-info-label premium-label-1">{{BasicLifeCoverLabel}}</label>
+    				</div>
+    				<div class="ui-block-b override-block-b-prm-info">
+    					<label class="termplan-premium-info-label" id="lc-term"></label>
+    				</div>
+    				<div class="ui-block-c override-block-c-prm-info">
+    					<label class="termplan-premium-info-label" id="lc-sum"></label>
+    				</div>
+    				<div class="ui-block-d override-block-d-prm-info">
+    					<label class="termplan-premium-info-label-3" id="lc-premium"></label>
+    				</div>
+    			
+    			</div> 
+    			
+    			<div class="ui-grid-c termplan-premium-info-details-2">
+    				<div class="ui-block-a override-block-a-prm-info">
+    					<label class="termplan-premium-info-label premium-label-1">{{CriticalIllnessRiderLabel}}</label>
+    				</div>
+    				<div class="ui-block-b override-block-b-prm-info">
+    					<label class="termplan-premium-info-label" id="critical-term"></label>
+    				</div>
+    				<div class="ui-block-c override-block-c-prm-info">
+    					<label class="termplan-premium-info-label" id="critical-sum"></label>
+    				</div>
+    				<div class="ui-block-d override-block-d-prm-info">
+    					<label class="termplan-premium-info-label-3" id="critical-premium"></label>
+    				</div>
+    			
+    			</div>
+    			
+    			<div class="termplan-hr"></div>
+    			
+    			<div class="ui-grid-a termplan-premium-summary">
+    			
+    				<div class="ui-block-a premium-summary-left">
+    					<label class="termplan-premium-info-label premium-summary-label-1">{{YearlyPremiumWithServiceTaxLabel}}</label>
+    				</div>
+    				
+    				<div class="ui-block-b premium-summary-right">
+    					<label class="termplan-premium-info-label-3 premium-summary-label-2">{{YearlyPremiumTotalAmountLabel}}</label>
+    				</div>
+    			</div>
+    			
+    		</div>
+    		
+    		<div id="termplan-right-block-3">
+     			<a href="#" data-role="button">{{BuyOnline}}</a>
+     		</div>
+      
+      	<div id="retirement-right-block-4" class="ui-grid-b retirement-links">
+        	<a href="#" class="ui-block-a retirement-save quote-opts" data-role="button" id="tp-save-quote">
+         		<img src="images/save.png" class="save-image" width="16" height="15"/>
+         		{{SaveQuote}}
+         	</a>
+          
+        	<a href="#" class="ui-block-b retirement-download termplan-dwnld quote-opts" data-role="button" id="tp-download">
+         		<img src="images/download.png" class="download-image" width="18" height="15"/>
+         		{{DownloadIllustration}}
+         	</a>
+
+			<a href="#"class="ui-block-c retirement-share termplan-share quote-opts" data-role="button" id="tp-share">
+         		<img src="images/share.png" class="share-image" width="18" height="15"/>
+         		{{Share}}
+         	</a> 
+    	</div> 
+    
+	</div>
+</div>
+
+</div>

@@ -1,0 +1,149 @@
+
+<div data-role="header" class="ui-header ia-header" data-theme="d" data-position="fixed" data-tap-toggle="false">
+	<a href="#" data-role="button" data-icon="header-logo" data-iconpos="none" data-inline="true"></a>
+	<h1 class="dashboard-header-text ia-title">Welcome to InsureAssist</h1>
+	<div data-role='control-group' data-type="horizontal" class="ui-btn-right ia-btn-right  ia-header-control-group" data-inline="true" data-position="inline">
+		<a href="#" data-role="button" data-icon="notification" data-iconpos="none"></a>
+		<a href="#" data-role="button" data-icon="none" data-iconpos="none" class="dashboard-header-user-name" id="userName-id">{{UsernameLabel}}</a>		
+	</div>	
+</div>
+
+<div data-role="content" class="ui-content">
+
+	<div id="sidebar_container" class="app-sidebar">
+	</div>
+	
+	<div id="dashboard_top_section">
+		<div id="ia-ads-section">
+			<img src="images/car_insurance.png" class="ia-ad-img">
+		</div>
+		
+		<div id="ia-advisor-section">
+			<div class="ia-advisor">
+				<img src="images/my_advisor.png" class="ia-advisor-img">
+				<label class="ia-myadvisor">My Advisor</label>
+				<label id="ia-advisor-name"></label>
+				
+				<div data-role="controlgroup" data-type="horizontal" id="advisor-icons" class="ui-controlgroup-advisor">
+					<a href="#" data-role="button" data-icon="call" data-iconpos="none"></a>
+					<a href="#" data-role="button" data-icon="chat" data-iconpos="none"></a>
+					<a href="#" data-role="button" data-icon="mail" data-iconpos="none"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dashboard_mid_section">
+		<!-- TODO: styling it as per UI guide -->
+		<label class="portfolio">{{MyPortfolioLabel}}</label>
+		<div class="dashboard-list-scroller-wrapper" id="ia-list-items">
+			<ul id="parent_list" data-role="listview" class="dashboard-parent-list">
+				<li id="ulip_list_container" data-role="collapsible"
+					data-content-theme="false" data-collapsed="false">
+					<h2>
+						<img src="images/ulip.png"></img> <label class="listitems-hdr ">{{PolicyType}}</label>
+					</h2>
+					<ul id="ulip_list" class="listitems-det">
+					</ul>
+				</li>
+
+				<li id="ret_list_container" data-role="collapsible" data-content-theme="false"  data-collapsed="false">
+					<h2>
+						<img src="images/Retirement_Pensions.png"></img>
+						<label class="listitems-hdr ">{{RetirementPensions}}</label>
+					</h2>
+					<ul id="ret_list" class="listitems-det">
+					</ul>
+				</li>
+
+				<li id="lifeins_list_container" data-role="collapsible" data-content-theme="false"  data-collapsed="false">
+					<h2>
+						<img src="images/Life Insurance.png"></img>
+						<label class="listitems-hdr">Life Insurance</label>
+					</h2>	
+					<ul id="lifeins_list" class="listitems-det">
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+ 
+	
+	<div id="dashboard_bottom_section" class="ui-grid-a">
+		
+	<div id="dashboard_bottom_left" class="ui-block-a dashboard-bottom-left">
+			
+		<div id="dashboard_bottom_left_grid" class="ui-grid-a">
+		
+			<div id="pie_chart_main-container" class="ui-block-a override-left">
+			
+				<div id="pie-chart-lbl">
+				<label class="dashboard-piechart-label">Asset Allocation</label>
+				</div>
+				
+				<div id="pie_chart_container" style="width:100%;height:100%;">
+				</div>
+				
+			</div>
+			
+				<div id="dashboard_summary_container" class="ui-block-b override-right">
+					
+					<div id="year-summary">
+						<label class="year">Year 2015-2016</label>
+					</div>
+						
+						<div id="dashboard_bottom_left_grid2" class="ui-grid-a">
+											
+							<div id="dashboard_summary_details" class="ui-block-a">
+							
+								<label class="summary-label">Premium you already paid</label>	
+								<label class="summary-amt" id="premium-already-Paid"></label>
+								
+							</div>
+					
+							<div id="amount-summary-details" class="ui-block-b">
+							
+								<label class="summary-label">To be paid</label>	
+								<label class="summary-amt" id="to-be-Paid"></label>
+								
+							</div>
+						</div>
+						
+						<a href="#"><label class="dashboard-download-receipt">Download Receipts</label></a>
+					
+				</div>
+	
+		</div>
+		
+	</div>
+		
+		<div id="dashboard_bottom_left" class="ui-block-b dashboard-bottom-right">
+			<div id="dashboard_application_status_section" class="ui-grid-a dashboard-application-status-section">
+
+					<div id="dashboard_application_status_left" class="ui-block-a dashboard-applicaiton-status-left">
+						<label class="dashboard-app-status-title">{{MyApplicationStatusLabel}}</label>
+						<label class="dashboard-app-status-reference-label">{{RefLabel}}:{{ReferenceNumberLabel}}</label>
+						<label class="dashboard-app-status-booked-on-label">{{BookedOnLabel}}:{{BookedOnDateLabel}}</label>
+
+						<div class="dashboard-application-status-received-section">
+							<div class="ui-icon ui-icon-left ui-icon-document-received ui-icon-notext">
+								<span class="dashboard-app-status-document-received-text-pos">{{DocumentReceivedLabel}}</span>
+							</div>
+							<label class="dashboard-app-status-next-step-label">{{NextStepLabel}}</label>
+						</div>
+					</div>
+					<div id="dashboard_application_status_right" class="ui-block-b dashboard-applicaiton-status-right">
+						<div class="dashboard-app-status-doughnut-placeholder">
+							<div class="dashboard-app-status-doughnut">
+								<span class="dashboard-app-status-doughnut-text-pos">Processed</span>						
+							</div>
+						</div>
+					</div>
+				</div> 
+		</div> 
+		
+	</div>
+</div>
+	
+	

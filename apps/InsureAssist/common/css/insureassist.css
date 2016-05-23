@@ -1,0 +1,3167 @@
+/*   Licensed Materials - Property of IBM
+     5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+     US Government Users Restricted Rights - Use, duplication or
+     disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+
+/* To do review .ui-btn */
+@font-face {
+    font-family: HelveticaNeueLTPro-Lt;
+    src: url("../fonts/HelveticaNeueLTPro-Lt.otf");
+}
+
+body, input, select, textarea {
+    /* font-family: century gothic!important; */
+    font-family: HelveticaNeueLTPro-Lt !important;
+}
+
+/*common styles to be used app wide*/
+.ui-header.app-header {
+    position: absolute;
+    height: 60px !important;
+    width: 100%;
+    background-color: #00B2EF;
+    vertical-align: middle;
+}
+
+.ui-title.app-header-text {
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* .ui-btn-right.next {
+    font-size: 1em;
+    font-color: #FFFFFF;
+} */
+
+.ia-btn-back {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #FFFFFF !important;
+    font-family: HelveticaNeueLTPro-Lt !important;
+    font-size: 1.1em !important;
+    text-shadow: none !important;
+    margin-top: 0.2em !important;
+}
+
+.ui-icon-back-arrow:after {
+    background-image: url("../images/back_arrow.png") !important;
+    background-size: 85%;
+    top: 45%;
+}
+
+.ui-icon-next-arrow:after {
+    background-image: url("../images/next_arrow.png") !important;
+    background-size: 85%;
+    top: 45%;
+}
+
+.ia-btn-back.ui-btn-icon-right:after {
+    right: 1.2em !important;
+    background-color: transparent !important;
+}
+
+.ia-btn-back.ui-btn-icon-left:after {
+    left: 1.2em !important;
+    background-color: transparent !important;
+}
+
+
+/*  .ui-title {
+    text-shadow: none;
+    font-weight: normal;
+    margin: 0.6em; 10px !important - To be fixed
+} */
+
+/* landing page styles */
+.ldg-main-background {
+    background: url("../images/agent_custermer-bg.png") no-repeat center
+        center;
+    background-size: cover;
+}
+
+.ldg-cust-btn-background {
+    background: url("../images/Customer.png") no-repeat center !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    font-size: 1.6em !important;
+    color: #00B2EF !important;
+    text-position: absolute !important;
+    width: 32% !important;
+    height: 18%;
+    border: none;
+}
+
+.ldg-cust-btn-background:active {
+    background: url("../images/Customer_click.png") no-repeat center
+        !important;
+    background-size: contain !important;
+    color: #00A6A0 !important;
+}
+
+.ldg-cust-btn-pos {
+    position: absolute;
+    top: 20%;
+    left: 46%;
+}
+
+.ldg-cust-text-pos {
+    position: absolute;
+    top: 38%;
+}
+
+.ldg-agent-btn-background {
+    background: url("../images/agent.png") no-repeat center !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    font-size: 1.6em !important;
+    color: #00B2EF !important;
+    text-position: absolute !important;
+    text-align: center;
+    width: 32% !important;
+    height: 18%;
+    border: none;
+}
+
+.ldg-agent-btn-background:active {
+    background: url("../images/agent_click.png") no-repeat center !important;;
+    background-size: contain !important;
+    color: #00A6A0 !important;
+}
+
+.ldg-agent-btn-pos {
+    position: absolute;
+    bottom: 20%;
+    left: 46%;
+}
+
+.ldg-agent-text-pos {
+    position: absolute;
+    top: 37%;
+    left: 56%;
+}
+
+/*login page styles*/
+
+/* TODO: get new screen background from Mohan */
+.lgn-main-background {
+    background: url("../images/Login_page-BG_image.png") no-repeat center
+        center;
+    background-size: cover;
+}
+
+.ui-grid-a.lgn-grid-pos {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 35%;
+    background-color: #e6e7e8;
+}
+
+.acct-lgn-btn-pos {
+    margin-top: 4% !important;
+    margin-left: 5% !important;
+    height: auto !important;
+    border: none !important;
+    width: 90% !important;
+}
+
+.acct-lgn-text-pos {
+    color: #ffffff !important;
+    font-size: 0.6em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #00B2EF !important;
+}
+
+.reg-btn-pos {
+    margin-top: 2% !important;
+    margin-left: 5% !important;
+    height: auto !important;
+    border: none !important;
+    width: 90% !important;
+}
+
+.reg-text-pos {
+    color: #ffffff !important;
+    font-size: 0.6em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #00B2EF !important;
+}
+
+.lgn-skip-btn-pos {
+    margin-top: 1% !important;
+    margin-left: 5% !important;
+    margin-bottom: 4% !important;
+    height: auto !important;
+    border: none !important;
+    width: 90% !important;
+}
+
+.lgn-skip-text-pos {
+    color: #00B2EF !important;
+    font-size: 0.6em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #F1F1F2 !important;
+}
+
+/**** loginPage styles end ****/
+
+
+/* /**** acctloginPage styles ****/
+/* .ui-content.acctlgn-cont{
+    position: absolute !important;
+    top: 0% !important;
+    bottom: 0% !important;
+    left: 0% !important;
+    right: 0% !important;
+} 
+ */
+.acctlgn-cont .ui-content {
+    position: absolute;
+    top: 0px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+.ui-grid-a.acctlgn-grid-pos {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 35%;
+}
+
+.acctlgn-block-width {
+    width: 100% !important;
+}
+
+.acctlgn-cntnue {
+    color: #58595b !important;
+    font-size: 1.2em !important;
+    padding-left: 1.2%;
+    padding-bottom: 0.5em !important;
+}
+
+.acctlgn-table-pos {
+    height: auto;
+    width: 100%;
+    background-color: #e6e7e8 !important;
+    padding: 3% 1% 3% 2%;
+    margin-left: 0.2em;
+}
+
+.acctlgn-table-pos > table,td {
+    border: none !important;
+}
+
+.acctlgn-label-width {
+    text-align: right;
+    font-color: #58595B !important;
+    width: 15% !important;
+    font-size: 0.75em !important;
+    padding-top: 2%;
+    vertical-align: middle !important;
+}
+
+.acctlgn-inp-width {
+    /*border-spacing:5%;*/
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-left: 5%;
+    width: 40% !important;
+}
+
+.acctlgn-inp-width .ui-input-text {
+    width: 100% !important;
+    margin-top: 0px !important;
+}
+
+.acctlgn-btn-pos {
+    padding-left: 7%;
+    /* padding-bottom: 3%; */
+    padding-right: 7%;
+    width: 90% !important;
+}
+
+.acctlgn-text-pos {
+    color: #ffffff !important;
+    font-size: 0.75em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #00B2EF !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+
+.lgn-error-msg{
+	font-size: 1.2em;
+    color: #D9182D;
+    padding-top: 5%;
+    display: none;
+}
+
+.acctlgn-fgtpwd-pos {
+    float: right;
+    color: #00B2EF !important;
+    text-decoration: none;
+    font-size: 0.8em !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#fb-btn .ui-icon-acctlgnfb:after {
+    background-image: url("../images/facebook.png") !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    top: 50% !important;
+    background-size: cover;
+}
+
+#gplus-btn .ui-icon-acctlgngplus:after {
+    background-image: url("../images/google.png") !important;
+    background-color: transparent !important;
+    top: 50% !important;
+    border: 0 !important;
+    background-size: cover;
+}
+
+.acctlgn-fb-text-pos {
+    color: #ffffff !important;
+    font-size: 0.75em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #3B5998 !important;
+    border-radius: 3px !important;
+    font-family: HelveticaNeueLTPro-Lt !important;
+}
+
+.acctlgn-google-text-pos {
+    color: #ffffff !important;
+    font-size: 0.75em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #dd4b39 !important;
+    border-radius: 3px !important;
+    font-family: HelveticaNeueLTPro-Lt !important;
+}
+
+.acctlgn-agrmnt-pos {
+    text-align: center;
+    font-size: 0.65em !important;
+    padding-top: 1em !important;
+}
+
+.acctlgn-terms {
+    color: #00b2ef !important;
+    text-decoration: none;
+}
+
+.acctlgn-noacct-pos {
+    padding-top: 35% !important;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em !important;
+    width: 100%;
+}
+
+.acctlgn-hrzntal-line {
+    border: #f1f1f2 solid 0.2em !important;
+}
+
+.ui-grid-a.acctlgn-bottom-grid-pos {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 35%;
+}
+
+/**** acctloginPage styles end ****/
+/**** downloadsPage styles start ****/
+/* downloadsPage Footer start */
+#downloads .ui-controlgroup-footer {
+    position: absolute;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* downloadsPage Footer ends */
+
+/* downloadsPage content start */
+#downloads .ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+#downloads-pos {
+    position: absolute;
+    width: 46%;
+    background: transparent;
+    left: 31%;
+    top: 3em;
+}
+
+#dwnds-text-pos {
+    margin: 0 !important;
+    margin-bottom: 3% !important;
+}
+
+.dwnds-table-width {
+    width: 100% !important;
+}
+
+#downloads table, tr, td {
+    border: #f1f1f2 solid 1px;
+    border-collapse: collapse !important;
+}
+
+.ui-icon-pdf-symbol {
+    background: url("../images/PDF.png") no-repeat center center !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    left: 2%;
+}
+
+.ui-icon-download-symbol {
+    background: url("../images/download.png") no-repeat center center
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    right: 2%;
+    float: right;
+}
+
+/**** downloadsPage styles end ****/
+
+/**** quotePage styles start ****/
+/* quotePage Footer start */
+#quote .ui-controlgroup-footer {
+    position: absolute;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* quotePage Footer ends */
+/* quotePage content start */
+#quote .ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+#quote_top_section {
+    position: absolute;
+    height: 53%;
+    width: 75%;
+    top: 10%;
+    left: 19%;
+    background: #ffffff;
+}
+
+.quote-heading {
+    color: #000000;
+    font-size: 1.3em !important;
+    margin: 0 !important;
+}
+
+.quote-subheading {
+    color: #929497;
+}
+
+#quote_top_grid {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.ui-block-a .quote-top-grid-left {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0%;
+    float: left;
+    display: block;
+    background: #FFFFFF;
+    top: 0%;
+}
+
+.quote-pension-btn-background {
+    background: url("../images/retirement_pension.png") no-repeat left
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    font-size: 0.95em !important;
+    color: #000000 !important;
+    text-position: absolute !important;
+    width: 100% !important;
+    height: 35% !important;
+    padding: 0% !important;
+    margin: 0% !important;
+    border: none;
+}
+
+.quote-pension-btn-pos {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.quote-pension-text-pos {
+    position: absolute;
+    top: 42%;
+    left: 35%;
+}
+
+.quote-term-btn-background {
+    background: url("../images/term_insurance.png") no-repeat left
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    font-size: 0.95em !important;
+    color: #000000 !important;
+    text-position: absolute !important;
+    width: 100% !important;
+    height: 35% !important;
+    padding: 0% !important;
+    margin: 0% !important;
+    border: none;
+}
+
+.quote-term-btn-pos {
+    position: absolute;
+    top: 38%;
+    left: 0%;
+}
+
+.quote-term-text-pos {
+    position: absolute;
+    top: 42%;
+    left: 35%;
+}
+
+.ui-block-b.quote-top-grid-right {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: #FFFFFF;
+    float: left;
+    display: block;
+    top: 0%;
+}
+
+.quote-wlins-btn-background {
+    background: url("../images/Whole_Life_insurance.png") no-repeat left
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    font-size: 0.95em !important;
+    color: #000000 !important;
+    text-position: absolute !important;
+    width: 100% !important;
+    height: 35% !important;
+    padding: 0% !important;
+    margin: 0% !important;
+    border: none;
+}
+
+.quote-wlins-btn-pos {
+    position: absolute;
+    top: 0%;
+    left: 8%;
+}
+
+.quote-wlins-text-pos {
+    position: absolute;
+    top: 42%;
+    left: 35%;
+}
+
+.quote-ulip-btn-background {
+    background: url("../images/ulip_button.png") no-repeat left !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    font-size: 0.95em !important;
+    color: #000000 !important;
+    text-position: absolute !important;
+    width: 100% !important;
+    height: 35% !important;
+    padding: 0% !important;
+    margin: 0% !important;
+    border: none;
+}
+
+.quote-ulip-btn-pos {
+    position: absolute;
+    top: 38%;
+    left: 8%;
+}
+
+.quote-ulip-text-pos {
+    position: absolute;
+    top: 42%;
+    left: 35%;
+}
+
+#quote_bottom_section {
+    position: absolute;
+    height: 36%;
+    width: 70%;
+    bottom: 2%;
+    left: 19%;
+    background: #ffffff;
+    border-bottom: #D0D2D3 1px solid;
+    border-top: #D0D2D3 1px solid;
+}
+
+.quote-label-pos {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+}
+
+.ui-icon-saved {
+    background: url("../images/my_saved_quotes.png") no-repeat left center
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    border: none;
+}
+
+.quote-mysaved-text-pos {
+    position: absolute;
+    color: #000000;
+    left: 4%;
+    top: 20%;
+}
+
+.app-swiper {
+    height: 80%;
+    width: 100%;
+    bottom: 1%;
+    left: 0%;
+    background: #ffffff;
+    position: absolute;
+    float: left;
+}
+
+/**** quotePage styles end ****/
+
+/**** swiperPage template style starts ****/
+.swiper-container {
+    width: 100%;
+    height: 85%;
+    float: left;
+}
+
+.swiper-slide {
+    text-align: left;
+    font-size: 1.0em;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: static;
+    border-right: #D0D2D3 1px solid;
+}
+
+.ui-block-a.quote-override-left {
+    width: 60%;
+}
+
+.ui-block-b.quote-override-right {
+    width: 40%;
+}
+
+.savedquote-top-label {
+    font-size: 0.6em !important;
+    color: #58595B !important;
+}
+
+.savedquote-top-content {
+    color: #000000;
+}
+
+.sq-term-yrs{
+	text-align: center !important;
+}
+
+.grid2-left {
+    width: 70%;
+    padding-top: 2%;
+}
+
+.grid2-right {
+    width: 30%;
+    padding-top: 2%;
+}
+
+.yearlyprm-amt {
+    color: #f19027 !important;
+    width: 100%;
+    border: #ffffff 1px solid;
+}
+
+.continue-button {
+    color: #ffffff !important;
+    font-size: 0.95em !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: #00B2EF !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 70%;
+}
+
+.quote-swiper-pagination {
+    position: static;
+}
+
+/**** swiperPage template style end ****/
+
+
+
+
+
+
+/**** RegistrationPage Styles ****/
+#basicregistration .ui-content {
+    top: 8%;
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    padding: 0 !important;
+    background-color: #FFFFFF;
+}
+
+#kycregistration .ui-content {
+    top: 8%;
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    padding: 0 !important;
+    background-color: #FFFFFF;
+}
+
+.reg-app-separator {
+    border-color: #D0D2D3;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin-top: 50px;
+}
+
+.ui-field-contain>label {
+    width: 40% !important;
+    font-size: 14px;
+}
+
+.ui-field-contain>label  ~ [class*="ui-"], .ui-field-contain .ui-controlgroup-controls
+    {
+    width: 250px !important;
+}
+
+.reg-form-subfields {
+    text-align: right;
+    font-color: #58595B;
+}
+
+.regstr-state .ui-select .ui-btn > span:not(.ui-li-count) {
+    color: #929497 !important;
+    font-size: 1.1em !important;
+}
+
+.regstr-state .ui-icon-carat-d:after {
+    background-image: url("../images/dropdown.png") !important;
+    top: 45% !important;
+    vertical-align: middle !important; 
+    background-size: 50%;
+}
+
+.regstr-state .ui-btn-icon-right:after {
+    top: 42%;
+    right: 0.25em;
+    width: 24px;
+    height: 24px;
+    background-color: #00B2EF;
+    border-radius: 0px;
+}
+#id-kycform-document {
+    margin-top: 2px !important;
+}
+
+.kyc-separator {
+    margin-left: 0%;
+    margin-right: 55%;
+    font-color: #F1F1F2 !important;
+}
+
+.kyc-documents {
+    font-color: #58595b;
+    font-size: 0.7em !important;
+}
+
+.kyc-all-documents {
+    margin-left: 42% !important;
+}
+
+.kyc-security .ui-select .ui-btn > span:not(.ui-li-count) {
+    color: #929497 !important;
+    font-size: 1.1em !important;
+}
+
+.kyc-security .ui-icon-carat-d:after {
+    background-image: url("../images/dropdown.png") !important;
+    top: 45% !important;
+    vertical-align: middle !important; 
+    background-size: 50%;
+}
+
+.kyc-security .ui-btn-icon-right:after {
+    top: 42%;
+    right: 0.25em;
+    width: 24px;
+    height: 24px;
+    background-color: #00B2EF;
+    border-radius: 0px;
+}
+
+.ui-input-text {
+    width: 250px !important;
+    font-size: 12px;
+}
+
+.reg-radio .ui-radio {
+    float: left !important;
+}
+
+#reg-gender .ui-controlgroup-controls{
+    width: 100% !important;
+    margin-left: -13%;
+    margin-top: -2%;
+}
+.ui-select .ui-btn {
+    font-size: 0.7em;
+}
+
+.ui-field-contain ui-alt-icon {
+    webkit-border-radius: none !important;
+}
+
+.reg-dropdown{
+    font-size: 1.1em;
+}
+
+#select-20-button{
+    background-color: white !important;
+}
+
+#select-30-button{
+    background-color: white !important;
+}
+
+.reg-radio .ui-radio {
+    float: right !important;
+}
+/**** Registration heading Styles ****/
+.reg-heading-section {
+    float: left;
+    border-style: solid;
+    border-width: 0px;
+    height: 8.1%;
+    margin-left: 28%;
+}
+
+/**** Registration Button Styles ****/
+.kyc-identitiy-proof-img  {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.kyc-address-proof-img  {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.kyc-reg-select-btn {
+    background-color: #00B2EF !important;
+    font-size: 1.0em !important;
+    width: 12% !important;
+    height: 8%;
+    border: none;
+}
+
+.radiobtn-1 {
+    background-color: white !important;
+    padding-left: 40px;
+    padding-right: 30px;
+    border: none !important;
+}
+
+.kyc-reg-upload-text-pos {
+    color: #F1F1F2;
+    left: 55%;
+}
+
+.reg-optional-address {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+#reg-address3-id {
+    margin-top: 0px;
+}
+
+#reg-optional-id {
+    margin-top: 0px !important;
+    font-size: 0.7em;
+}
+
+#reg-gender-category .ui-radio .ui-btn.ui-radio-on:after {
+    border-color: #d0d2d3 !important;
+    background: #00b2ef;
+    border: solid 6px #d0d2d3 !important;
+    opacity: 2.2 !important;
+}
+
+#reg-gender-category .ui-radio .ui-btn.ui-radio-off:after {
+    background: #d0d2d3 !important;
+    border: solid 3px #58595b !important;
+    opacity: 1.2 !important;
+}
+
+/*** Registration Validation Styles ***/
+.error-highlight {
+    border: 1px solid !important;
+    color: #D9182D !important;
+}
+
+.name-error-highlight {
+    color: red;
+    font-size: 0.9em !important;
+    display: none;
+}
+
+.error-image {
+    margin-left: 5px;
+}
+
+/* .right-image{
+    margin: 5px;
+} 
+*/
+.kyc-error-highlight {
+    display: none;
+}
+
+/* TODO: error highlight
+ added to add error highlight for text area in referral form
+.error-highlight > textarea {
+    box-shadow: 0 0 12px #EA4040!important;
+ }
+
+  added to add error highlight for dropdown in testing form
+.error-highlight 
+
+
+ select {
+    box-shadow: 0 0 12px #EA4040!important;
+ } */
+
+/* .ui-payment{
+    width: 40%;
+    height: 10%;
+    background-color:red !important;
+}
+*/
+.ui-content-prePayment-page.ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+/***Premium Payment CSS starts***/
+#ia-payment-det {
+    position: absolute;
+    width: 50%;
+    background: #D0D2D3;
+    left: 25%;
+    height: 12%;
+    top: 5%;
+    border: solid 1px #D0D2D3 !important;
+}
+
+.pmt-policy-lbl {
+    padding: 5% 0% 0% 5%;
+}
+
+.payment-hdr-lbl{
+	font-size: 0.8em !important;
+    padding-bottom: 1%;
+    color: #58595B;
+    text-shadow: none;
+}
+
+.payment-opt-lbl{
+	text-shadow: none;
+	font-size: 1em !important;
+}
+
+.policy-amt-lbl{
+	text-align: center !important;
+}
+
+.ia-pmt-edt {
+    padding: 35% 45% 0% 45% !important;
+    color: #00B2EF;
+    text-shadow: none;
+    font-weight: bold !important;
+}
+
+#ia-payment-options {
+    position: absolute;
+    width: 50%;
+    background: #FFFFFF;
+    left: 25%;
+    top: 20%;
+    height: 42%;
+	border: solid 1px #D0D2D3 !important;	
+}
+
+.pmt-options-label{
+    margin: 3% 0% 0% 5% !important;
+}
+
+#pmt-options-category {
+    margin-left: 1em;
+}
+
+#pmt-options-category .ui-controlgroup-controls{
+	margin-left: 0% !important;
+	width: 100% !important;
+}
+
+#pmt-options-category .radio-choice-pmt-opts {
+    background-color: #FFFFFF !important;
+    border: none !important;
+}
+
+#pmt-options-category .ui-radio {
+    float: none !important;
+}
+
+#pmt-options-category .ui-radio .ui-btn.ui-radio-on:after {
+    /*  border-color: #d0d2d3 !important; */
+    background: #00b2ef;
+    border: solid 6px #d0d2d3 !important;
+    opacity: 2.2 !important;
+}
+
+#pmt-options-category .ui-radio .ui-btn.ui-radio-off:after {
+    background: #d0d2d3 !important;
+    border: solid 3px #58595b !important;
+    opacity: 1.2 !important;
+    box-shadow: none !important;
+}
+
+#pmt-options-category .ui-btn-icon-left:after, .ui-btn-icon-right:after
+    {
+    top: 42%;
+}
+
+#pmt-options-category .ui-btn-icon-left {
+    padding-left: 3em !important;
+}
+
+.pmt-contn-btn{
+    position: absolute;
+    width: 50% !important;
+    left: 25%;
+    bottom: 28% !important;
+    background: #00B2EF !important;
+    text-shadow: none !important;
+    border: solid 1px #00B2EF !important;
+}
+.ia-btn-continue {
+    background: #00B2EF !important;
+    border-color: #00B2EF !important;
+    color: #FFFFFF !important;
+    font-size: 1em !important;
+    margin: 0 !important;
+    text-shadow: none !important;
+}
+
+/*** premium payment css ends***/
+
+/***dashboard css***/
+
+/* Header */
+.ia-header.ui-header {
+    background: #00B2EF !important;
+    height: 60px !important;
+    width: 100%;
+    border: none;
+}
+
+.ui-icon-header-logo {
+    background: url("../images/ia_logo_white.png") no-repeat center
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    width: 18%;
+    height: 50%;
+    border: none;
+    margin: 0px !important;
+}
+
+.ia-title.ui-title {
+    text-shadow: none;
+    font-weight: bold !important;
+    margin: 0em; /* 10px !important - To be fixed */
+    margin-top: 20px;
+    padding: 0em;
+    font-size: 1em !important;
+}
+
+.ia-header-control-group {
+    postion: absolute;
+    margin-bottom: 10px;
+}
+
+.ui-icon-notification {
+    background: url("../images/notify.png") no-repeat center center
+        !important;
+    background-size: contain !important;
+    box-shadow: none !important;
+    height: 25%;
+    border: none;
+}
+
+.ia-btn-right.ui-btn-right {
+    height: 50%;
+    margin-top: 15px !important;
+    text-align: center;
+}
+
+.dashboard-header-user-name {
+    background: #00B2EF !important;
+    font-size: 1em !important;
+    border: none;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding-bottom: 0em !important;
+    padding-top: 0em !important;
+}
+
+#pie_chart_container.nvd3.nv-wrap.nv-pieChart{
+     -webkit-transform: translate(0,5) !important;
+} 
+
+/* Side bar */
+.ui-icon-db-home {
+    background: url("../images/home_over.png") no-repeat center !important;
+    background-size: 40% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-home.selected, .ui-icon-db-home:active {
+    background: url("../images/home.png") no-repeat center !important;
+    background-size: 40% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-products {
+    background: url("../images/Products_over.png") no-repeat center
+        !important;
+    background-size: 40% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-products.selected, .ui-icon-db-products:active {
+    background: url("../images/Products.png") no-repeat center !important;
+    background-size: 40% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-quote {
+    background: url("../images/quote_over.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-quote.selected, .ui-icon-db-quote:active {
+    background: url("../images/quote.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-claims {
+    background: url("../images/Claims_over.png") no-repeat center !important;
+    background-size: 45% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-claims.selected, .ui-icon-db-claims:active {
+    background: url("../images/Claims.png") no-repeat center !important;
+    background-size: 45% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-calculators {
+    background: url("../images/Calculators_over.png") no-repeat center
+        !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.55em;
+    color: #D0D2D3 !important;
+    padding-top: 4.0em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-calculators.selected, .ui-icon-db-calculators:active {
+    background: url("../images/Calculators.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.55em;
+    padding-top: 4.0em; /*Padding for text and icon*/
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-downloads {
+    background: url("../images/Downloads_over.png") no-repeat center
+        !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.55em;
+    color: #D0D2D3 !important;
+    padding-top: 4.0em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-downloads.selected, .ui-icon-db-downloads:active {
+    background: url("../images/Downloads.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.55em;
+    padding-top: 4.0em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-faq {
+    background: url("../images/faq_over.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-faq.selected, .ui-icon-db-faq:active {
+    background: url("../images/faq.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-contactus {
+    background: url("../images/Contact Us_over.png") no-repeat center
+        !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-contactus.selected, .ui-icon-db-contactus:active {
+    background: url("../images/Contact Us.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 3.2em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-aboutus {
+    background: url("../images/About Us_over.png") no-repeat center
+        !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    border-width: 0px !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 2.8em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+    border-right-width: 5px !important;
+    border-right-color: #58595B !important;
+}
+
+.ui-icon-db-aboutus.selected, .ui-icon-db-aboutus:active {
+    background: url("../images/About Us.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    color: #00B2EF !important;
+    font-size: 0.6em;
+    padding-top: 2.8em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-branchlocator {
+    background: url("../images/Branch_Locator_Gray.png") no-repeat center !important;
+    background-size: 30% !important;
+    background-position-y: 14% !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3.8em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-width: 0px !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+}
+
+.ui-icon-db-branchlocator.selected, .ui-icon-db-branchlocator:active {
+	background: url("../images/Branch_Locator_Blue.png") no-repeat center !important;
+    background-size: 30% !important;
+    background-position-y: 14% !important;
+    font-size: 0.6em;
+    color: #00B2EF !important;
+    padding-top: 3.8em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-left-width: 5px !important;
+    border-left-color: #00B2EF !important;
+}
+
+.ui-icon-db-findanagent {
+    background: url("../images/Find_Agent_Gray.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    font-size: 0.6em;
+    color: #D0D2D3 !important;
+    padding-top: 3em; /*Padding for text and icon*/
+    box-shadow: none !important;
+    border-width: 0px !important;
+    border-left-width: 5px !important;
+    border-left-color: #58595B !important;
+  
+}
+
+.ui-icon-db-findanagent.selected, .ui-icon-db-findanagent:active  {
+    background: url("../images/Find_Agent_Blue.png") no-repeat center !important;
+    background-size: 35% !important;
+    background-position-y: 14% !important;
+    font-size: 0.6em;
+    color: #00B2EF !important;
+    padding-top: 3em; /*Padding for text and icon*/
+    box-shadow: none !important;
+   	border-left-width: 5px !important;
+    border-left-color: #00B2EF !important; 
+}
+
+/* Middle section */
+
+/* Footer */
+.ia-footer.ui-footer {
+    background: #F1F1F2 !important;
+    height: 60px !important;
+    text-align: center;
+    border: none;
+}
+
+#dashboard .ui-controlgroup-footer {
+    position: absolute;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ui-controlgroup.sidebar {
+    position: absolute;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ui-icon-branchlocator {
+    background: url("../images/BranchLocator.png") no-repeat center center
+        !important;
+    background-size: 22% !important;
+    background-position-y: 8% !important;
+    border: none;
+    box-shadow: none !important;
+    font-size: 0.7em !important;
+    color: #58595B !important; /* text color */
+    padding-top: 3.0em; /*Padding for text and icon*/
+}
+
+.ui-icon-findanagent {
+    background: url("../images/Find an Agent.png") no-repeat center center
+        !important;
+    background-size: 28% !important;
+    background-position-y: 8% !important;
+    border: none;
+    box-shadow: none !important;
+    font-size: 0.7em !important;
+    color: #58595B !important; /* text color */
+    padding-top: 3.0em; /*Padding for text and icon*/
+}
+
+.ui-icon-callmeback {
+    background: url("../images/CallMeBack.png") no-repeat center center
+        !important;
+    background-size: 28% !important;
+    background-position-y: 8% !important;
+    border: none;
+    box-shadow: none !important;
+    font-size: 0.7em !important;
+    color: #58595B !important; /* text color */
+    padding-top: 3.0em; /*Padding for text and icon*/
+}
+
+.ui-icon-livechat {
+    background: url("../images/LiveChat.png") no-repeat center center
+        !important;
+    background-size: 30% !important;
+    background-position-y: 8% !important;
+    border: none;
+    box-shadow: none !important;
+    font-size: 0.7em !important;
+    color: #58595B !important; /* text color */
+    padding-top: 3.0em; /*Padding for text and icon*/
+}
+
+.nav {
+    font-family: Helvetica !important;
+    padding-top: 15px;
+    margin: 0px !important;
+}
+
+.dashboard, .insure_logo {
+    text-align: left;
+    padding-left: 20px;
+    background-color: #00b2ef !important;
+    border: none;
+    color: white !important;
+    font-size: 26px !important;
+}
+
+/* su: Dashboard bottom styles - start */
+
+/*Use this approach to fit content in between header and footer with no overlap*/
+/* TODO: match the top and bottom to the header and footer dimensions */
+#dashboard .ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+/* TODO: match the top and bottom to the header and footer dimensions */
+.app-sidebar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 8%;
+    height: 100%;
+    background-color: #58595B;
+}
+
+#dashboard_top_section {
+    position: absolute;
+    height: 14%;
+    width: 90%;
+    top: 0%;
+    left: 10%;
+    background-color: #FFFFFF;
+}
+
+#ia-ads-section {
+    position: absolute;
+    height: 90%;
+    width: 65%;
+    left: 0%;
+    top: 1%;
+    float: left;
+    display: block;
+}
+
+.ia-ad-img {
+    height: 100%;
+    width: 100%;
+}
+
+#ia-advisor-section {
+    position: absolute;
+    left: 67%;
+    width: 31.5%;
+    height: 86%;
+    top: 1%;
+    background: #FFFFFF;
+    float: left;
+    display: block;
+    border: solid 1px #D0D2D3 !important;
+}
+
+.ia-advisor {
+    padding-left: 20px;
+    padding-top: 3%;
+    /*      border: thick !important; 
+    border-color: #D0D2D3 !important; */
+}
+
+.ia-advisor-img {
+    height: 15%;
+    width: 15%;
+    float: left;
+}
+
+.ia-myadvisor {
+    margin-left: 5em !important;
+    font-size: 0.8em !important;
+    margin-bottom: 0em !important;
+}
+
+#ia-advisor-name {
+    margin-left: 8.2em !important;
+    font-size: 8px !important;
+    padding: 0em !important;
+    color: #A6A8AB !important;
+}
+
+.ui-controlgroup-advisor {
+    /* background-color: #FFFFFF !important; */
+    position: absolute;
+    left: 25% !important;
+    top: 55%;
+    margin: 0em !important;
+    /*  border: none !important;
+    padding-top: 0em !important;
+    float: left;
+    padding-left: 5em !important; */
+    /*  left: 25%;
+    width: 75% !important; */
+}
+
+.ui-icon-call {
+    background: url("../images/my_advisor_phone.png") no-repeat center
+        center !important;
+    background-size: 55% !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+.ui-icon-chat {
+    background: url("../images/my_advisor_chat.png") no-repeat center center
+        !important;
+    background-size: 55% !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+.ui-icon-mail {
+    background: url("../images/my_advisor_mail.png") no-repeat center center
+        !important;
+    background-size: 55% !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+#dashboard_mid_section {
+    position: absolute;
+    height: 57%;
+    width: 88.5%;
+    top: 15%;
+    left: 10%;
+    border: solid 1px #D0D2D3 !important;
+    background: #FFFFFF;
+}
+
+.portfolio {
+    margin-left: 0.5em !important;
+    margin-top: 0.5em !important;
+	font-size: 1em !important;
+    font-weight: bold !important;
+}
+
+.dashboard-list-scroller-wrapper {
+    height: 90%;
+    width: 100%;
+    bottom: 0%;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+}
+
+/* Removing negative margin from main list */
+.ui-listview.dashboard-parent-list {
+    margin: 0em !important;
+}
+
+.listitems-det {
+    padding: 0em !important;
+}
+
+#ia-list-items .ui-listview>li h2, .ui-li-static {
+    margin: 0em !important;
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+    border: none !important;
+}
+
+#ia-list-items .ui-collapsible-content {
+    padding: 0em !important;
+}
+
+#ia-list-items .ui-icon-minus:after {
+    background: url("../images/minus.png") no-repeat !important;
+    top: 50%;
+    vertical-align: middle;
+}
+
+#ia-list-items .ui-icon-plus:after {
+    background: url("../images/plus.png") no-repeat !important;
+    top: 50%;
+    vertical-align: middle;
+}
+
+#ia-list-items .ui-btn {
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+    background: #F1F1F2 !important;
+    border: none !important;
+}
+
+#ia-list-items img {
+    float: left;
+    height: 2em;
+    width: 2em;
+}
+
+.listitems-hdr {
+    padding-left: 2.5em !important;
+    padding-top: 0.5em !important;
+    color: #58595B;
+}
+
+.ui-listview>.ui-li-static.ui-li-has-thumb {
+    padding-left: 1.25em;
+}
+
+/* TODO: styling as per the UI guide needs to be done - optimize classes if possible */
+.ins-listitem-policyname {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+
+.ins-listitem-policyid {
+    padding-left: 0.5em;
+    padding-right: 1em;
+    float: left;
+    color: #00B2EF;
+}
+
+.ins-listitem-policystatus {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    float: left;
+    color: #FFFFFF;
+    background-color: #929497;
+    text-shadow: none;
+    border-radius: 12px;
+    vertical-align: middle;
+}
+
+.ins-listitem-assetvalue {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+
+.ins-listitem-assetvalue-label {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+
+.ins-listitem-assetvalue-value {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+    color: #929497;
+}
+
+.ins-listitem-overall-gain {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+
+.ins-listitem-overall-gain-label {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+
+.ins-listitem-overall-gain-value {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+    color: #8cc63F;
+}
+
+.ins-listitem-secondline-date-block {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+}
+
+.ins-listitem-secondline-action-block {
+    padding-left: 0.8em;
+    float: left;
+}
+
+.dashboard-listitem-date-label {
+    color: #58595B;
+    font-size: 0.8em !important;
+}
+
+.dashboard-listitem-date-value {
+    color: #A6A8AB;
+}
+
+.dashboard-listitem-date-dueon-value {
+    color: #D9182D;
+}
+
+.dashboard-listitem-action-value {
+    color: #00B2EF;
+}
+
+.dashboard-listitem-date-label {
+    font-size: 0.8em;
+}
+
+.dashboard-listitem-action-label {
+    font-size: 0.8em;
+    
+}
+
+.lapsed {
+    background-color: #D9182D;
+}
+
+.dashboard-paynow-separator {
+    float: left
+}
+
+.dashboard-viewalloc-label{
+	border-left: 2px solid #A6A8AB;
+    margin-left: 5%;
+    padding-left: 5%;
+}
+
+/* TODO: change as per sidebar */
+#dashboard_bottom_section {
+    position: absolute;
+    height: 25%;
+    width: 90%;
+    bottom: 0%;
+    left: 10%;
+    background: #FFFFFF;
+}
+
+.ui-block-a.dashboard-bottom-left {
+    position: absolute;
+    height: 96%;
+    width: 65%;
+    left: 0%;
+    float: left;
+    display: block;
+    background: #FFFFFF;
+    border: solid 1px #D0D2D3 !important;
+}
+
+.ui-block-a.override-left {
+    width: 55%;
+}
+
+.g.nv-wrap.nv-pieChart{
+	    margin-top: -32px !important;
+}
+
+.ui-block-b.override-right {
+    width: 45%;
+}
+
+.ui-block-b.dashboard-bottom-right {
+    position: absolute;
+    left: 67%;
+    width: 31.5%;
+    height: 96%;
+    background: #FFFFFF;
+    float: left;
+    display: block;
+    border: solid 1px #D0D2D3 !important;
+}
+
+.dashboard-piechart-label {
+    font-size: 1em !important;
+    font-weight: bold !important;
+    margin: 5% 0% 0% 5% !important;
+}
+
+#year-summary {
+    background-color: #F1F1F2;
+    width: 95%;
+    margin-top: 1em;
+    vertical-align: middle;
+}
+
+.year {
+    font-size: 1em !important;
+    margin-left: 10px !important;
+    text-color: #58595B !important;
+}
+
+.summary-label {
+    font-size: 0.6em !important;
+    color: #58595B !important;
+}
+
+.summary-amt {
+    color: #A6A8AB !important;
+}
+
+.dashboard-download-receipt {
+    color: #00B2EF;
+    font-size: 0.7em !important;
+}
+
+.dashboard-app-status-title {
+    font-weight: bold !important;
+    font-size: 1em !important;
+    text-shadow: none;
+    padding-left: 4px;
+    margin-top: 1em !important;
+}
+
+.dashboard-app-status-reference-label {
+    font-size: 0.6em !important;
+    text-shadow: none;
+    padding-left: 4px;
+}
+
+.dashboard-app-status-booked-on-label {
+    font-size: 0.6em !important;
+    text-shadow: none;
+    padding-left: 4px;
+}
+
+.dashboard-app-status-next-step-label {
+    font-size: 0.6em !important;
+    text-shadow: none;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.dashboard-app-status-img-status {
+    position: absolute;
+    bottom: 22%;
+    height: 6%;
+    float: left;
+}
+
+.dashboard-application-status-section {
+    height: 100%;
+}
+
+.dashboard-application-status-received-section {
+    position: absolute;
+    width: 60%;
+    bottom: 2%;
+    float: left;
+    padding-left: 4px;
+}
+
+.dashboard-app-status-doughnut-placeholder {
+    /*  position: relative;
+    bottom: 0;
+    width: 86%;
+    height: 70%;
+    background-color: blue; */
+    
+}
+
+.dashboard-app-status-doughnut {
+    position: absolute;
+    bottom: 10%;
+    width: 28%;
+    height: 56%;
+    border-radius: 50%;
+    background: white;
+    border: 12px solid #F19027;
+    font-size: 0.8em;
+    line-height: 5.5em;
+    text-align: center;
+    color: #F19027;
+}
+
+.dashboard-app-status-doughnut-text-pos {
+    position: absolute;
+    bottom: 10%;
+    left: 14%;
+    /* text-align: center; */
+}
+
+.ui-block-a.dashboard-applicaiton-status-left {
+    width: 60%;
+    height: 100%;
+    padding-left: 3%;
+}
+
+.ui-block-b.dashboard-applicaiton-status-right {
+    width: 40%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.ui-icon-document-received {
+    background: url("../images/DocumentReceived.png") no-repeat;
+    background-size: 1.1em !important;
+}
+
+.dashboard-app-status-document-received-text-pos {
+    position: relative;
+    left: 12%;
+    font-size: 0.8em;
+    text-shadow: none;
+}
+
+/* su: Dashboard bottom styles - end */
+.insure_wel {
+    padding-top: 10px;
+    font-size: 18px;
+    color: #000000;
+    text-shadow: none;
+}
+
+.noti-class, .noti-class-href {
+    background: #00b2ef !important;
+    height: 25px;
+    border: hidden;
+    /* padding-top: 10px; */
+}
+
+#sidepanel {
+    width: 12%;
+    background: #4d4c48 !important;
+    margin-left: 0px;
+    height: 80%;
+}
+
+.ui-icon-myhome:after {
+    background-image: url("../images/Home_blue.png");
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+}
+.list-item-home {
+    background: url("../images/Home_blue.png") no-repeat center !important;
+    height: auto;
+}
+
+/* TODO: Need to make the footer responsive */
+.dashboard-footer {
+    height: 14% !important;
+}
+
+.footer-btn {
+    height: 100%;
+    background: #e9e9e9 !important;
+    border: none;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+    color: #6d6e70 !important;
+}
+
+.footer-btn img {
+    height: 35px;
+}
+
+.footer-text {
+    padding-top: 10px;
+    font-size: 1em !important;
+    ;
+}
+
+
+
+/*** Retirement Pension styling ***/
+
+
+#ia-termlyf-plan{
+    height:56%;
+    width:50%;
+    position: absolute;
+    background: #FFFFFF;
+    left: 10%;
+    top: 13%;
+    border: solid 2px #D0D2D3 !important;
+}
+
+p#ia-termlyf {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#ia-termlyf-chkbx{
+    position: absolute;
+    left: 1.0em;
+    width: 5%;
+    height: -1%;
+    margin-top: -9px;
+    outline-width: 0%;
+
+    }
+  
+#ia-termlyf-form{
+    width: 90%;
+    padding-left: 1.0em;
+    padding-top: 0% !important;
+}
+
+.termlyf.ui-field-contain>label {
+    width: 17% !important;
+    }
+
+.termlyf.ui-field-contain>label  ~ [class*="ui-"],.ui-field-contain .ui-controlgroup-controls
+    {
+    width: 45% !important;
+    margin-left: 5%;
+}
+
+.termlyf-form-subfields{
+    text-align: right;
+}
+
+.ia-termlyf-label{
+    margin-top: -6px !important;
+    margin-left: 9% !important;
+    font-size: 0.8em !important;
+}
+
+#cnt-btn {
+    position: absolute;
+    width: 35% !important;
+    left: 30%;
+    top: 106%;;
+    background: #00B2EF !important;
+    text-shadow: none !important;
+}
+/***** left section of retirement & pension Plan***********/
+
+.retirement-pension.ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0% !important;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+.fragment-navbar {
+    position: absolute;
+    width: 40%;
+    padding-top: 2%;
+    top: 0%;
+    left: 30%;
+}
+
+.fragment-navbar .ui-btn {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    font-size: 1em !important;
+    font-family: HelveticaNeueLTPro-Lt !important;
+    padding: 2% 0% !important;
+}
+
+.fragment-navbar .ui-btn.ui-btn-active {
+    background-color: #FFFFFF !important;
+    color: #A6A6A8 !important;
+    border-color: #A6A6A8 !important;
+}
+
+.fragment-navbar .ui-btn {
+    background-color: #00648D !important;
+    color: #FFFFFF !important;
+    border-color: #00648D !important;
+}
+
+#retirements-pension-left-section {
+    position: absolute;
+    top: 11% !important;
+    left: 10%;
+    height: 88%;
+    width: 45%;
+}
+
+.basic-info {
+    background-color: #F1F1F2;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 0%;
+}
+
+.rtrmt-basic-info-label{
+    text-align: center;
+    font-size: 1.2em !important;
+    float: left;
+    padding: 1.2% 0% 0% 3%;
+    text-shadow: none;
+    font-weight: bold;
+    margin-bottom: 0.3em !important;
+}
+
+.rtmt-basic-info-edit-label{
+    text-align: right;
+    color: #00B2EF !important;
+    text-shadow: none;
+    padding: 1.2% 2% 0% 3%;
+    font-weight: bold;
+    margin-bottom: 0.3em !important;
+}
+
+#retirements_mid_section,#termplan_mid_section {
+    position: absolute;
+    height: 76%;
+    width: 99%;
+    top: 8%;
+    left: 0%;
+    background: white;
+    border: solid 1px #D0D2D3 !important;
+    padding: 0%;
+}
+
+.retirement-info-label {
+    margin: 1% 3% !important;
+    background-color: #F1F1F2;
+    text-shadow: none;
+    padding: 1% 2% !important;
+    font-weight: bold;
+}
+
+.retirement-info-label2 {
+    margin: 3% 5% !important;
+    background-color: #F1F1F2;
+    text-shadow: none;
+    padding: 2% !important;
+    font-weight: bold;
+}
+
+.ui-icon-male {
+    background: url("../images/male_deactivate.png") no-repeat !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2em;
+    padding-bottom: 0% !important;
+}
+
+.ui-icon-male.selected, .ui-icon-male:active {
+    background: url("../images/male_active.png") no-repeat center !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2em;
+    padding-bottom: 0% !important;
+}
+
+.ui-icon-female.selected, .ui-icon-female:active {
+    background: url("../images/female_active.png") no-repeat center !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2em;
+    margin-left: 15px !important;
+    padding-bottom: 0% !important;
+}
+
+.ui-icon-female {
+    background: url("../images/female_deactivate.png") no-repeat !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2em;
+    margin-left: 15px !important;
+    padding-bottom: 0% !important;
+}
+
+.gender-icons,.smoker-icons.ui-controlgroup {
+    padding-left: 10% !important;
+    display: block !important;
+    margin: 0% !important;
+}
+
+.dob-cal .ui-input-text {
+    width: 75% !important;
+    margin-left: 10%;
+}
+
+.calendar-img .ui-input-text input{
+    background: url("../images/calendar.png") no-repeat no-repeat!important;
+    background-position: right !important; 
+    vertical-align: middle !important; 
+    background-size: 20% !important;
+     
+}
+
+.input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.calendar-img .input[type=date]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+    display: none;
+}
+
+#calc-btn,.contn-btn {
+    position: absolute;
+    width: 56% !important;
+    left: 22%;
+    bottom: 3% !important;
+    background: #00B2EF !important;
+    text-shadow: none !important;
+}
+
+
+
+.custom-slider .ui-slider-bg.ui-btn-active {
+    background-color: #F19027 !important;
+    border-color: #F19027 !important;
+}
+
+.custom-slider.ui-rangeslider .ui-slider-bg {
+    display: block !important;
+}
+
+.custom-slider .ui-btn:active{
+    background-color: #F19027 !important;
+    border-color: #F19027 !important;
+    box-shadow: 0 0 12px #F19027 !important;
+}
+
+.custom-slider .ui-btn:focus{
+    box-shadow: 0 0 12px #F19027 !important;
+}
+
+.custom-slider .ui-slider-handle {
+    border-radius: 20px !important;
+    height: 25px !important;
+    width: 25px !important;
+    margin-top: -15px !important;
+    box-shadow: #F19027 !important;
+}
+
+.custom-slider .ui-slider {
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+}
+
+.custom-slider .ui-slider-track {
+    border-radius: 15px !important;
+    height: 4px;
+    background-color: #D0D2D3 !important;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.custom-slider.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track {
+    height: 4px !important;
+    border-radius: 10px !important;
+}
+.custom-slider.ui-rangeslider .ui-rangeslider-sliders{
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.custom-slider .ui-slider-input{
+    display: none;
+}  
+.retrPlan-sldr-range{
+    text-align: center;
+    font-size: 0.7em !important;
+}
+
+#retrPlan-sldr-range-id{
+	margin-top: 0px !important;
+}
+
+.termplan-sldr-range{
+    text-align: center;
+    font-size: 0.7em !important;
+    margin-bottom: 0% !important;
+    margin-top: 10% !important;
+}
+
+#lifecover-retrPlan-sldr-range{
+	margin-top: 6px !important;
+}
+
+.scale-details{
+    margin-top: -4%;
+    padding-bottom: 2%;
+}
+
+.scale-details-1{
+    margin-top: -3%;
+    padding-bottom: 1%;
+}
+
+.scale-details-2{
+    margin-top: -7%;
+    padding-bottom: 2%;
+}
+
+.retrPlan-scale-starts{
+    text-align: left;
+    font-size: 0.6em !important;
+    padding-left: 10%;
+}
+
+.retrPlan-scale-ends{
+    text-align: right;
+    font-size: 0.6em !important;
+    padding-right: 10%;
+}
+
+.retrPlan-scale-starts-1{
+    text-align: left;
+    font-size: 0.6em !important;
+    padding-left: 15%;
+}
+
+.retrPlan-scale-ends-1{
+    text-align: right;
+    font-size: 0.6em !important;
+    padding-right: 15%;
+}
+
+.retrPlan-scale-starts-3{
+    text-align: left;
+    font-size: 0.6em !important;
+    padding-left: 20%;
+}
+
+.retrPlan-scale-ends-3 {
+	text-align: right;
+	font-size: 0.6em !important;
+	padding-right: 20%;
+}
+
+.sldr-range-lbl {
+	text-align: center;
+	margin-top: -2px !important;
+}
+
+.retriement-plan-rates{
+	margin-top: 5px;
+}
+
+/***** right section of retirement & pension Plan***********/
+#retirements-pension-right-section{
+    position: absolute;
+    top: 11% !important;
+    left: 55%;
+    height: 88%;
+}
+
+#retirement-right-block-1{
+    position: absolute !important;
+    height: 20% !important;
+    width: 85% !important;
+    border: solid 1px #F19027 !important;
+    background:#F19027;
+    margin-left: 2%;
+}
+
+.retirement-premium-label-1,.termplan-premium-label-1{
+    padding-top: 5%;
+    padding-left: 0 !important;
+    font-size: 1.2em !important;
+    height:15%;
+    text-shadow: none;
+    text-align: center !important;
+}
+
+.retirement-premium-label-2{
+    font-size: 1.2em !important;
+    padding-left:18%;
+    padding-top: 0% !important;
+    height:12%;
+    text-shadow: none;
+    
+}
+
+.retirement-premium-label-3{
+    font-size: 2.4em !important;
+    padding-left:25%;
+    padding-top: 0% !important;
+    color: white !important;
+}
+
+#retirement-right-block-2{
+    position: absolute !important;
+    width: 85% !important;
+    height: 34% !important;
+    border: solid 1px #D0D2D3 !important;
+    margin-left: 2%;
+    top: 22%;
+}
+
+#retirement-right-block-3 .ui-btn{
+    position: absolute !important;
+    height: 3%;
+    width: 79% !important;
+    margin-left: 2%;
+    background: #00B2EF !important;
+    top: 56%;
+    color: white !important;
+}
+
+#retirement-right-block-4{
+    position: absolute !important;
+    border: solid 1px #FFFFFF !important;
+    margin-left: 2%;
+    top: 67%;
+    width: 85% !important;
+    height: 3%;
+}
+
+.retirement-save {
+    font-size: 0.8em!important;
+}
+
+.quote-opts{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important
+}
+
+.retirement-download{
+    font-size: 0.8em !important;
+}
+
+.retirement-share{
+    font-size: 0.8em !important;
+    padding-left: 50px;
+}
+
+.retirement-links{
+    padding-left: 5%;
+}
+.payment-cal-hdr{
+    border: solid 1px #D0D2D3 !important;   
+    background-color: #D0D2D3;
+    padding-left: 7px !important;
+    padding-top: 4px;
+    
+}
+
+.payment-details-left{
+    padding-left:20px !important; 
+    margin-top:7px;
+    text-align: left;
+}
+
+.payment-details-right{
+    text-align: right;
+    padding-right: 25px;
+     margin-top:7px;
+}
+
+
+/*** Term Life Plan CSS Starts ***/
+
+#termlifeplan .ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+}
+
+.term-plan-mid-section{
+    overflow-y: scroll;
+}
+
+
+.gender-smoker-info{
+	padding-top: 0%;
+}
+
+.ui-icon-nonsmoker {
+    background: url("../images/non_smoker_deactivate.png") no-repeat !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2em;
+    padding-bottom: 0% !important;
+}
+
+
+.ui-icon-nonsmoker.selected, .ui-icon-nonsmoker:active {
+    background: url("../images/non_smoker_active.png") no-repeat !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2em;
+    padding-bottom: 0% !important;
+}
+
+.ui-icon-smoker.selected, .ui-icon-smoker:active {
+    background: url("../images/Smoker_active_icon.png") no-repeat center !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2.0em;
+    margin-left: 15px !important;
+    padding-bottom: 0% !important;
+}
+
+.ui-icon-smoker {
+    background: url("../images/Smoker_deactivate_icon.png") no-repeat !important;
+    background-size: 100% !important;
+    border: none;
+    box-shadow: none !important;
+    padding-top: 2.0em;
+    margin-left: 15px !important;
+    padding-bottom: 0% !important;
+}
+
+/* .dob-premFreq-info{
+    padding-top: 2%;
+}
+ */
+#select-choice-1{
+    font-size: 1.2em !important;
+}
+
+.premFrequency .ui-select .ui-btn{
+    background-color: #FFFFFF !important;
+    font-family: HelveticaNeueLTPro-Lt !important;
+    width: 65%;
+    margin-left: 8%;
+    text-align: left;
+    border-color: #D0D2D3;
+}
+
+.premFrequency .ui-select .ui-btn > span:not(.ui-li-count) {
+    color: #929497 !important;
+    font-size: 1.1em !important;
+}
+
+.premFrequency .ui-icon-carat-d:after {
+    background-image: url("../images/dropdown.png") !important;
+    top: 45% !important;
+    vertical-align: middle !important; 
+    background-size: 50%;
+}
+
+.premFrequency .ui-btn-icon-right:after {
+    top: 42%;
+    right: 0.25em;
+    width: 24px;
+    height: 24px;
+    background-color: #00B2EF;
+    border-radius: 0px;
+}
+
+
+.cust-checkbox.ui-btn{
+    background-color: #FFFFFF !important;
+    border: none !important;
+    margin-top: 2% !important;
+    margin-left: 1% !important;
+}
+
+.cust-checkbox .ui-checkbox-on{
+    display: none !important;
+} 
+
+.cust-checkbox.ui-btn.ui-checkbox-off:after,.ui-btn.ui-checkbox-on:after{
+    border: 1px solid #929497 !important; 
+    background: #FFFFFF;
+    top: 45% !important; 
+    height: 16px;
+    width: 16px;
+    border-radius: 0 !important;
+    opacity: 1 !important;
+    
+} 
+
+.cust-checkbox.ui-btn.ui-checkbox-on:after{
+    background: url("../images/right_blue.png") no-repeat center !important;
+    background-size: 100% !important;
+}
+
+.policyterm-info-label{
+    margin-left: 8% !important;
+}
+
+.cover-sldr .ui-slider-track{
+    margin-left: 20px;
+}
+
+.scale-details-cover{
+    margin-top: -8%;
+    padding-bottom: 2%;
+}
+
+#termplan_mid_section .ui-checkbox{
+    margin: 0 !important;
+}
+
+
+.termplan-right-section{
+    position: absolute;
+    top: 11% !important;
+    left: 55%;
+    height: 89%;
+    width: 45% !important;
+}
+
+.termplan-premium-info{
+    position: absolute !important;
+    height: 16% !important;
+    width: 90% !important;
+    background:#F19027;
+    margin-left: 5%;
+}
+
+.termplan-prm-label-1{
+    padding-top: 5% !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+}
+
+.termplan-premium-label-2{
+    font-size: 2em !important;
+    padding-left: 0 !important;
+    padding-top: 0% !important;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+    text-align: center !important;
+}
+
+.termplan-right-block-2{
+    position: absolute !important;
+    width: 89.5% !important;
+    height: 34% !important;
+    border: solid 1px #D0D2D3 !important;
+    margin-left: 5%;
+    top: 20%;
+}
+
+.termplan-premium-info-hdr {
+    background-color: #F1F1F2;
+    margin-bottom: 2%;
+}
+
+.override-block-a-prm-info {
+    width: 35% !important;
+}
+
+.override-block-b-prm-info {
+    width: 15% !important;
+}
+
+.override-block-c-prm-info {
+    width: 30% !important;
+    padding-left: 3%;
+}
+
+.override-block-d-prm-info {
+    width: 20% !important;
+}
+
+.termplan-premium-info-label{
+    font-size: 0.8em !important;
+    margin: 1em 0em !important;
+    text-align: left !important;
+}
+
+.termplan-premium-info-label-3{
+    font-size: 0.8em !important;
+    margin: 1em 0em !important;
+    text-align: right !important;
+    padding-right: 15% !important
+}
+
+.premium-label-1{
+    padding-left: 10%;
+}
+
+.termplan-hr{
+    border-bottom: solid 1px #D0D2D3;
+    margin: 0% 2%;
+}
+
+.premium-summary-left{
+    width: 70% !important;
+}
+
+.premium-summary-right{
+    width: 30% !important;
+}
+
+.premium-summary-label-1{
+    padding-left: 5%;
+}
+
+.premium-summary-label-2{
+    padding-right: 10% !important;
+    color: #F19027;
+}
+
+#termplan-right-block-3 .ui-btn{
+    position: absolute !important;
+    height: 3%;
+    width: 83.5% !important;
+    margin-left: 4.5%;
+    background: #00B2EF !important;
+    top: 56%;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+.termplan-dwnld{
+    width: 40% !important;
+}
+
+.termplan-share{
+    padding-left: 8% !important;
+    width: 26% !important;
+}
+
+/*** Term Life Plan CSS Ends ***/
+
+
+/************/
+/*** Asset Allocation styling starts ***/
+/************/
+
+#assetAllocation .ui-content {
+    position: absolute;
+    top: 60px !important;
+    bottom: 0px !important;
+    right: 0%;
+    left: 0%;
+    background: #FFFFFF !important;
+    padding: 0 !important;
+} 
+
+.asset-alloc-hdr{
+    border: solid 1px #D0D2D3 !important;   
+    background-color: #D0D2D3;
+    padding-left:1px;
+    font-weight: bold !important;
+}
+.Pencilmodify-image{
+    width: 7px !important;
+    height: 10px !important;
+}
+#asset-allocation-policy{
+    width: 50%;
+    height: 3%;
+    position: absolute;
+    background: #FFFFFF;
+    border: solid 2px #FFFFFF!important;
+    left: 28%;
+    top: 23px;
+}
+
+#asset-allocation-content{
+    height: 85%;
+    width: 50%;
+    position: absolute;
+    background: #FFFFFF;
+    left: 28%;
+    top: 55px;
+    border: solid 2px #D0D2D3 !important;
+    
+}
+
+#data-list{
+    overflow-y: scroll;	
+    height: 40%;
+}
+
+#data-list{
+    /* overflow-y: scroll; */
+    margin-left: -31px !important;
+    padding-left: 31px !important;
+}
+
+#asset-alloc-lbl-1f{
+    margin-left: 8px;
+}
+#asset-policyno{
+    font-size: 1.1em;
+    width:58% !important;
+    font-weight: bold !important;
+}
+
+#asset-modify{
+    width: 20% !important;
+    font-size: 0.9em;
+    color: #00B2EF !important;
+    text-align: right;
+}
+
+#asset-deposit{
+    width: 18% !important;
+    text-align: right;
+    font-size: 0.9em;
+    color: #00B2EF !important;
+}
+
+.asset-details{
+    padding-left: 7px !important;
+    padding-top: 13px;
+}
+
+.asset-app-separator{
+    border-color: #D0D2D3;
+    border-width: 1.5px 0 0 0;
+    border-style: solid;
+    margin-top: 0px;
+    width: 90%;
+    margin-left: 4%;
+    
+}
+
+#asset-alloc-lbl-1{
+    width: 128% !important;
+    margin-left: 10px;
+}
+
+#asset-alloc-lbl-2{
+    width: 60%;
+    padding-left: 48px; 
+}
+
+#asset-alloc-lbl-3{
+    padding-left: 45px;
+}
+
+#asset-alloc-lbl-4{
+    padding-left: 25px;
+}
+
+.current-fund-val{
+    padding-left: 50px;
+}
+
+.currentfund{
+    padding-left: 10px !important;
+    width: 128% !important;
+}
+
+.current-aloc-val{
+    width: 53%;
+    padding-left: 48px; 
+}
+
+/* Dashboard Pie Chart position fix */
+#pie_chart_container .nvd3.nv-wrap.nv-pieChart{
+     -webkit-transform: translate(0,0);
+}
+
+.modify-fund-piechart .nvd3.nv-wrap.nv-pieChart{
+     -webkit-transform: translate(0,0);
+}
+
+.annual-rtn-val{
+    padding-left: 25px;
+} 
+
+#asset-alloc-lbl-1f{
+    margin-left: 10px;
+}
+
+#asset-piechart{
+    width: 100% !important;
+    height: 45% !important;
+ /*    transform: translate(200,120) !important; */
+}
+ 
+.modify-fund-piechart .nvd3.nv-wrap.nv-pieChart{
+     -webkit-transform: translate(5,0) !important;
+} 
+/*** Asset Allocation styling ends ***/
+
+
+
+/***********/
+/***********      Modify PopUP styling     *******************/
+/***********/
+#modify-fund-allocation{
+    background: #F1F1F2;
+    top: 85px;
+}
+
+.fund-allocation.ui-grid-b{
+    padding-top: 2% !important;
+    padding-bottom: 1% !important;
+}
+
+#id-modify-fund-hdr{
+    top: 10px;;
+}
+ 
+.modify-fund-hdr{
+    text-align: center;
+} 
+
+#fund-cancel{
+    color: #00B2EF;
+    font-size: 1.2em !important;    
+}
+
+#fund-submit{
+    color: #00B2EF;
+    font-size: 1.2em !important;
+}
+
+#fund-modify{
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+}
+
+#modify-app-separator{
+    border-color: #D0D2D3;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin-top: 1%;
+}
+
+#id-modify-add-fund{
+    top: 7%;
+    text-align: right;
+    width: 88%;
+    color: #00B2EF;
+    padding-top:5% !important;
+}
+
+#modify-app-separator{
+    border-color: #D0D2D3;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin-top: 1%;
+}
+
+#id-modify-add-fund{
+    top: 7%;
+    text-align: right;
+    width: 88%;
+    color: #00B2EF;
+    padding-top:5% !important;
+}
+
+#modify-popup-popup{       
+    top: 130.5px !important;
+    left: 35% !important;
+    width: 33% !important;
+   } 
+
+.alloc-popup .ui-input-text{
+    width: 60px !important;
+    font-size: 15px;    
+    margin-top: 4% !important;  
+    margin-left: -8%;
+}
+
+.ui-block-a.alloc-popup{
+    width: 60%;	
+}
+.ui-block-b.alloc-popup{
+    width: 20%; 
+}
+.ui-block-c.alloc-popup{
+    width: 20%; 
+    margin-top: 3% !important; 
+}
+
+#id-modify-total-fund{
+    top: 100%;
+    height: 7% ;
+    background-color: #D0D2D3; 
+    } 
+
+#modify-total-fund-lbl{
+    text-align: center;
+    size: 0.7em;
+    margin-top: 15px;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    padding-bottom: 4% !important;
+    padding-top: 4% !important;
+}
+
+.total-fund-highlight{
+	color: #D9182D !important;
+}
+/*** Modify PopUP styling ends ***/
+ 

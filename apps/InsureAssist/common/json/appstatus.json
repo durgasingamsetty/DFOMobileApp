@@ -1,0 +1,9 @@
+{
+	"appStatus":{
+		"referenceNumber": "128746B",
+		"bookingDate": "21-07-2015",
+		"documentReceived": "Yes",
+		"nextStep": "Application Verification",
+		"status": "Processed"
+	}
+}

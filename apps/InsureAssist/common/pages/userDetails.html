@@ -1,0 +1,65 @@
+<div data-role="header" class="ui-header ia-header" data-theme="d" data-position="fixed" data-tap-toggle="false">
+	<!-- TODO: handle back button in JS instead as this will be common for both insurance types -->
+    <a href="javascript: history.back()" class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">Back</a>
+    <h1 class="dashboard-header-text ia-title">User Details</h1>
+    <div data-role='control-group' data-type="horizontal" class="ui-btn-right ia-btn-right  ia-header-control-group" data-inline="true" data-position="inline">
+        <a href="#" data-role="button" data-icon="notification" data-iconpos="none"></a>
+        <a href="#" data-role="button" data-icon="none" data-iconpos="none" class="dashboard-header-user-name">{{UsernameLabel}}</a>        
+    </div>
+      
+</div>
+
+<div data-role="content" class="ui-content retirement-pension">
+
+<div id="tmins_sidebar_container" class="app-sidebar"></div>
+    
+    <!-- TODO: needs fixing -->
+
+
+       <div data-role="navbar" class="fragment-navbar" id="user-frgmt-navbar">
+         <ul>
+         <li><a href="#" class="ui-btn-active nav-element">Key Features And Benefits</a></li>
+         <li><a href="#" class="nav-element">Pension Calculator</a></li>
+         </ul>
+       </div>
+
+ 
+<div id="ia-termlyf-plan">
+        <p id="ia-termlyf"><b>Basic Information</b></p>
+        <input id="ia-termlyf-chkbx" type="checkbox" name="teamlyfplan" checked="checked" />
+        <label class="ia-termlyf-label">Insured Same as Applicant</label>
+    
+<form id="ia-termlyf-form">
+        <div id="termlyf-firstname" class="ui-field-contain termlyf">
+        <label for="firstname" class="termlyf-form-subfields">{{FirstName}}</label>
+        <input type="text" name="firstname" id="termlyf-firstname-input" placeholder="First name" />
+        </div>
+        
+        <div id="termlyf-lastname" class="ui-field-contain termlyf" >
+        <label for="lastname" class="termlyf-form-subfields">{{LastName}}</label>
+        <input type="text" name="lastname" id="termlyf-lastname-input" placeholder="Last name" />
+    </div>
+    
+    <div id="termlyf-email" class="ui-field-contain termlyf">
+        <label for="email" class="termlyf-form-subfields">{{Email}}</label> 
+        <input type="text" name="email" id="termlyf-email-input" placeholder="username@example.com" />
+    </div>
+    
+    <div id="termlyf-pincode" class="ui-field-contain termlyf">
+         <label for="pincode" class="termlyf-form-subfields">{{PinCode}}</label>
+         <input type="text" name="pincode" id="termlyf-pincode-input" placeholder="90221"/>
+    </div>
+    
+     <div id="termlyf-mobile" class="ui-field-contain termlyf">
+         <label for="mobile" class="termlyf-form-subfields">{{Mobile}}</label>
+         <input type="text" name="mobile" id="termlyf-mobile-input" placeholder="9896xxxxxx"/>
+    </div> 
+    
+</form>
+
+    <div id="cnt-btn">
+    	<!-- TODO: handle this button in JS instead as this will be common for both insurance types -->
+         <a href="#" data-role="button" data-rel="back" id="continue-btn" class="ia-btn-continue">{{Save}}</a>
+    </div>
+ </div>
+</div>

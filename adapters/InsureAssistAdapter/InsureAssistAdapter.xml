@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed Materials - Property of IBM
+    5725-I43 (C) Copyright IBM Corp. 2011, 2013. All Rights Reserved.
+    US Government Users Restricted Rights - Use, duplication or
+    disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<wl:adapter name="InsureAssistAdapter"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:wl="http://www.ibm.com/mfp/integration"
+	xmlns:http="http://www.ibm.com/mfp/integration/http">
+
+	<displayName>InsureAssistAdapter</displayName>
+	<description>InsureAssistAdapter</description>
+	<connectivity>
+		<connectionPolicy xsi:type="http:HTTPConnectionPolicyType">
+			<protocol>http</protocol>
+			<domain>127.0.0.1</domain>
+			<port>10080</port>
+			<connectionTimeoutInMilliseconds>30000</connectionTimeoutInMilliseconds>
+			<socketTimeoutInMilliseconds>30000</socketTimeoutInMilliseconds>
+			<maxConcurrentConnectionsPerNode>50</maxConcurrentConnectionsPerNode>
+			<!-- Following properties used by adapter's key manager for choosing specific certificate from key store  
+			<sslCertificateAlias></sslCertificateAlias> 
+			<sslCertificatePassword></sslCertificatePassword>
+			-->		
+		</connectionPolicy>
+	</connectivity>
+
+	<procedure name="getAdvisors">
+		<displayName>getAdvisors</displayName>
+		<description>Gets the list of advisors</description>
+	</procedure>
+	<procedure name="getPortfolioDetails">
+		<displayName>getPortfolioDetails</displayName>
+		<description>Gets the list of policies the user owns on the dashboard screen.</description>
+	</procedure>
+	<procedure name="getApplicationStatus">
+		<displayName>getApplicationStatus</displayName>
+		<description>Gets the application status for the users.</description>
+	</procedure>
+	<procedure name="getPremiumSummary">
+		<displayName>getPremiumSummary</displayName>
+		<description>Gets the yearly premium summary for the users.</description>
+	</procedure>
+	<procedure name="getAssetFundAllocation">
+		<displayName>getAssetFundAllocation</displayName>
+		<description>Gets the asset fund allocation details for the users.</description>
+	</procedure>
+	<procedure name="getFundAllocationSummary">
+		<displayName>getFundAllocationSummary</displayName>
+		<description>Gets the total asset fund allocation details for the users.</description>
+	</procedure>
+	<procedure name="modifyFundAllocation">
+		<displayName>modifyFundAllocation</displayName>
+		<description>Function to be called when a user modifies/adds funds.</description>
+	</procedure>
+	<procedure name="getRetirementPensionCalculation">
+		<displayName>getRetirementPensionCalculation</displayName>
+		<description>Function to be called when a user needs to calculate the premium amount for retirement and pension plans</description>
+	</procedure>
+	<procedure name="getTermInsuranceCalculation">
+		<displayName>getTermInsuranceCalculation</displayName>
+		<description>Function to be called when a user needs to calculate the premium amount for term insurance plans</description>
+	</procedure> 
+</wl:adapter>

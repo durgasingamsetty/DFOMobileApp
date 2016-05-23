@@ -1,0 +1,68 @@
+<div data-role="header" class="ui-header ia-header" data-theme="d" data-position="fixed" data-tap-toggle="false">
+	<a href="#dashboard" class=" ui-btn  ui-btn-icon-left ui-icon-back-arrow ia-btn-back">Back</a>
+	<h1 class="dashboard-header-text ia-title">Renewals and Payments</h1>
+	<div data-role='control-group' data-type="horizontal" class="ui-btn-right ia-btn-right  ia-header-control-group" data-inline="true" data-position="inline">
+		<a href="#" data-role="button" data-icon="notification" data-iconpos="none"></a>
+		<a href="#" data-role="button" data-icon="none" data-iconpos="none" class="dashboard-header-user-name">{{UsernameLabel}}</a>		
+	</div>	
+</div>
+
+<div data-role="content" class="ui-content-prePayment-page">
+
+	<div id="pmt_sidebar_container" class="app-sidebar">
+	</div>
+	<div id="ia-payment-det" class="ui-grid-c">
+	
+		<div class="ui-block-a pmt-policy-lbl">
+			<label class="payment-hdr-lbl">Policy Owner</label>
+			<label class="payment-opt-lbl">Vikram Singh</label>
+		</div>
+		
+		
+		<div class="ui-block-b pmt-policy-lbl">
+				<label class="payment-hdr-lbl">Policy Number</label>
+				<label class="payment-opt-lbl">#094848448A</label>
+		</div>
+		
+		
+		<div class="ui-block-c pmt-policy-lbl policy-amt-lbl">
+				<label class="payment-hdr-lbl">Premium Amount</label>
+				<label class="payment-opt-lbl">Rs.10,000</label>
+		</div>
+			
+			
+		<div class="ui-block-d">
+				<label class="ia-pmt-edt">EDIT</label>
+		</div>
+		
+	</div>
+	
+	
+	<div id="ia-payment-options">
+		<label id="ia-pmt-1" class="pmt-options-label">Please select your payment option and continue.</label>	
+		<div class="payment-options" id="pmt-options-category">
+			<fieldset data-role="controlgroup" data-type="vertical">
+				<input type="radio" name="radio-chocice-ia-1" id="radio-choice-ia-1a"checked="checked" >
+				<label for="radio-choice-ia-1a" class="radio-choice-pmt-opts">Internet Banking</label>
+				
+				<input type="radio" name="radio-chocice-ia-1" id="radio-choice-ia-1b">
+				<label for="radio-choice-ia-1b" class="radio-choice-pmt-opts">Credit Card</label>
+				
+				<input type="radio" name="radio-chocice-ia-1" id="radio-choice-ia-1c">
+				<label for="radio-choice-ia-1c" class="radio-choice-pmt-opts">Debit Card</label>
+				
+				<input type="radio" name="radio-chocice-ia-1" id="radio-choice-ia-1d">
+				<label for="radio-choice-ia-1d" class="radio-choice-pmt-opts">Other payment Gateways</label>
+				
+				<input type="radio" name="radio-chocice-ia-1" id="radio-choice-ia-1e">
+				<label for="radio-choice-ia-1e" class="radio-choice-pmt-opts">Mobile Money</label>
+			</fieldset>
+		</div>
+		
+	</div>
+	
+	<div class="pmt-contn-btn">
+                <a href="#" data-role="button" id="continue-btn" class="ia-btn-continue">Continue</a>
+            </div> 
+</div>
+

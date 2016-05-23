@@ -1,0 +1,132 @@
+<!--New User Registration Page 1-->
+
+<div data-role="header" class="app-header" id="basic-reg-hdr" data-position="fixed" data-tap-toggle="false">
+    <a href="#acctlogin" class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">Back</a>
+	<h1 class="app-header-text ia-title">{{NewUserRegLabel}}</h1>
+	<a id="registration_next_btn" href="#kycregistration" class=" ui-btn ui-btn-icon-right ui-icon-next-arrow ia-btn-back">Next</a>
+</div>
+<!-- /header -->
+
+<div data-role="content" class="ui-content-reg-page">
+
+       <div class="reg-heading-section" id="basic-heading">
+          <h4 style="float: left">{{PageSubHeading}}</h4>
+       </div>
+
+       <div class="reg-app-separator"></div>
+       
+<form id="basic-reg-form">
+
+       <div id="reg-firstname" class="ui-field-contain">
+           <label for="firstname" class="reg-form-subfields">{{FirstName}}</label>
+           <input type="text" name="firstname" id="reg-firstname-input" placeholder="First name" />
+           <div class="name-error-highlight" id="firstname-error-highlight">
+           <img src="images/error.png" class="error-image" width="5" height="20" /> Please enter your first name
+           </div>
+       </div>
+
+        <div id="reg-lastname" class="ui-field-contain ">
+            <label for="lastname" class="reg-form-subfields">{{LastName}}</label>
+            <input type="text" name="lastname" id="reg-lastname-input" placeholder="Last name" />
+            <div class="name-error-highlight" id="lastname-error-highlight">
+            <img src="images/error.png" class="error-image" width="5" height="20" /> Please enter your last name
+            </div>
+        </div>
+
+        <div id="reg-gender" class="ui-field-contain override-bgcolor">
+            <label for="gender" class="reg-form-subfields">{{Gender}}</label>
+            <fieldset data-role="controlgroup" id="reg-gender-category" class="reg-radio">
+            <input type="radio" name="radio-choice-1" id="reg-radio-choice-2" value="2" checked="checked" /> 
+            <label for="reg-radio-choice-2" class="radiobtn-1">{{Female}}</label>
+            <input type="radio" name="radio-choice-1" id="reg-radio-choice-1" value="1" /> 
+            <label for="reg-radio-choice-1" class="radiobtn-1">{{Male}}</label>
+            </fieldset>
+        </div>
+
+        <div id="reg-dob" class="ui-field-contain">
+            <label for="dob" class="reg-form-subfields">{{DateofBirth}}</label>
+            <input type="date" name="dob" id="reg-dob-input" />
+        </div>
+
+        <div id="reg-email" class="ui-field-contain">
+            <label for="email" class="reg-form-subfields">{{Email}}</label> 
+            <input type="text" name="email" id="reg-email-input" placeholder="username@example.com" />
+            <div class="name-error-highlight" id="email-error-highlight">
+            <img src="images/error.png" class="error-image" width="5" height="20" /> Please enter valid email address
+            </div>
+
+        </div>
+
+        <div id="reg-addressline1" class="ui-field-contain">
+            <label for="addressline1" class="reg-form-subfields">{{AddressLine1}}</label>
+            <input type="text" name="addressline1" id="reg-addressline1-input" />
+        </div>
+
+        <div id="reg-addressline2" class="ui-field-contain">
+            <label for="addressline2" class="reg-form-subfields">{{AddressLine2}}</label>
+            <input type="text" name="addressline2" id="reg-addressline2-input" />
+        </div>
+
+        <div id="reg-addressline3" class="ui-field-contain">
+            <label for="addressline3" class="reg-form-subfields" id="reg-address3-id">{{AddressLine3}}
+            <!-- <br><small id="reg-optional-id">{{Optional}}</small> --></label>
+            <input type="text" name="addressline3" id="reg-addressline3-input" />
+        </div> 
+        
+        <div id="reg-pincode" class="ui-field-contain">
+            <label for="pincode" class="reg-form-subfields">{{PinCode}}</label>
+            <input type="text" name="pincode" id="reg-pincode-input" placeholder="90221"/>
+        </div>
+
+        <div id="reg-city" class="ui-field-contain">
+            <label for="city" class="reg-form-subfields">{{City}}</label> 
+            <input type="text" name="city" id="reg-city-input"/>
+        </div>
+
+
+       <div id="reg-state-selectmenu" class="ui-field-contain regstr-state">
+            <label for="state" class="reg-form-subfields">{{State}}</label>
+            <select name="state" class="ui-icon-carat-d">
+          
+                        <option value="AndhraPradesh">{{AndhraPradesh}}</option>
+                        <option value="ArunachalPradesh">{{ArunachalPradesh}}</option>
+                        <option value="Assam">{{Assam}}</option>
+                        <option value="Bihar">{{Bihar}}</option>
+                        <option value="Chhattisgarh">{{Chhattisgarh}}</option>
+                        <option value="Goa">{{Goa}}</option>
+                        <option value="Gujarat">{{Gujarat}}</option>
+                        <option value="Haryana">{{Haryana}}</option>
+                        <option value="HimachalPradesh">{{HimachalPradesh}}</option>
+                        <option value="JammuandKashmir">{{JammuandKashmir}}</option>
+                        <option value="Jharkhand">{{Jharkhand}}</option>
+                        <option value="Karnataka">{{Karnataka}}</option>
+                        <option value="Kerala">{{Kerala}}</option>
+                        <option value="MadhyaPradesh">{{MadhyaPradesh}}</option>
+                        <option value="Maharashtra">{{Maharashtra}}</option>
+                        <option value="Manipur">{{Manipur}}</option>
+                        <option value="Meghalaya">{{Meghalaya}}</option>
+                        <option value="Mizoram">{{Mizoram}}</option>
+                        <option value="Nagaland">{{Nagaland}}</option>
+                        <option value="Orissa">{{Orissa}}</option>
+                        <option value="Punjab">{{Punjab}}</option>
+                        <option value="Rajasthan">{{Rajasthan}}</option>
+                        <option value="Sikkim">{{Sikkim}}</option>
+                        <option value="TamilNadu">{{TamilNadu}}</option>
+                        <option value="Telangana">{{Telangana}}</option>
+                        <option value="Tripura">{{Tripura}}</option>
+                        <option value="UttarPradesh">{{UttarPradesh}}</option>
+                        <option value="Uttarakhand">{{Uttarakhand}}</option>
+                        <option value="WestBengal">{{WestBengal}}</option>
+              </select>
+         </div>
+</form>         
+</div>
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="ia-footer">
+              <div data-role="controlgroup" data-type="horizontal" class="footer">
+                <a href="#" data-role="button" data-icon="branchlocator" data-iconpos="none">{{BranchLocatorLabel}}</a>
+                <a href="#" data-role="button" data-icon="findanagent" data-iconpos="none">{{FindAnAgentLabel}}</a>
+                <a href="#" data-role="button" data-icon="callmeback" data-iconpos="none">{{CallMeBackLabel}}</a>
+                <a href="#" data-role="button" data-icon="livechat" data-iconpos="none">{{LiveChatLabel}}</a>
+              </div>
+</div> 

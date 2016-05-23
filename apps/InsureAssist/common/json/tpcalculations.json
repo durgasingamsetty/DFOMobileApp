@@ -1,0 +1,64 @@
+{
+	"calculationResults":[
+		
+		{"calculationResult":{
+			"annualPremium": 29510,
+			"basicLifeCover": {
+				"term": "5 years",
+				"sumAssured": 300000,
+				"premium": 22000,
+				},
+			"criticalIllnessCover":{
+				"term": "3 years",
+				"sumAssured": 100000,
+				"premium": 7510,
+				},
+			}
+		},
+		
+		{"calculationResult":{
+			"annualPremium": 30000,
+			"basicLifeCover": {
+				"term": "8 years",
+				"sumAssured": 320000,
+				"premium": 20000,
+				},
+			"criticalIllnessCover":{
+				"term": "8 years",
+				"sumAssured": 160000,
+				"premium": 10000,
+				},
+			}
+		},
+		
+		{"calculationResult":{
+			"annualPremium": 40000,
+			"basicLifeCover": {
+				"term": "10 years",
+				"sumAssured": 400000,
+				"premium": 30000,
+				},
+			"criticalIllnessCover":{
+				"term": "5 years",
+				"sumAssured": 160000,
+				"premium": 10000,
+				},
+			}
+		},
+		
+		{"calculationResult":{
+			"annualPremium": 25000,
+			"basicLifeCover": {
+				"term": "4 years",
+				"sumAssured": 100000,
+				"premium": 15000,
+				},
+			"criticalIllnessCover":{
+				"term": "4 years",
+				"sumAssured": 80000,
+				"premium": 10000,
+				},
+			}
+		}
+	]
+}

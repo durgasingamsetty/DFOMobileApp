@@ -1,0 +1,50 @@
+{
+	"policyList":[
+		
+		{"policy":{
+			"policyType" : "ULIP",
+			"policyName": "ULIP Profit Plus",
+			"policyNumber" : "094848448A",
+			"policyStatus" : "Active",
+			"assetValue" : 245000,
+			"gainValue": 33300,
+			"gainPercent": 12,
+			"policyStartDate": "13/11/2003",
+			"policyEndDate": "13/11/2023",
+			"lastPaymentDate": "13/05/2015",
+			"dueDate":"13/11/2015",
+			"policyAmount": 8300,
+			"amountInvested": 70000,
+			}
+		},
+		
+		{"policy":{
+		    "policyType" : "Retirement & Pensions",
+			"policyName": "Retirement Plan 2",
+			"policyNumber" : "094848448A",
+			"policyStatus" : "Active",
+			"policyStartDate": "13/11/2003",
+			"policyEndDate": "13/11/2023",
+			"lastPaymentDate": "13/05/2015",
+			"dueDate":"11/11/2015",
+			"policyAmount": 10000,
+			"amountInvested": 40000,
+			}
+		},
+		
+		{"policy":{
+			"policyType" : "Life Insurance",
+			"policyName": "Term Plan 2",
+			"policyNumber" : "094848448A",
+			"policyStatus" : "Lapsed",
+			"policyStartDate": "13/11/2003",
+			"policyEndDate": "13/11/2023",
+			"lastPaymentDate": "13/05/2015",
+			"dueDate":"13/04/2015",
+			"policyAmount": 8500,
+			"amountInvested": 65000,
+			}
+		},
+			
+	]
+}

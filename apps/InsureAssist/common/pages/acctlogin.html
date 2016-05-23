@@ -1,0 +1,94 @@
+<!--  Acct Login Page -->
+<div data-role="content" class="acctlgn-cont">
+
+	 	<div class="ui-grid-a acctlgn-grid-pos">
+	 	
+			<div class="ui-block-a acctlgn-block-width acctlgn-cntnue">
+				<span class="acctlgn-cntnue">{{ContinueText}}</span>
+			</div>
+
+			<div class="ui-block-a acctlgn-block-width">
+		
+					<table id="login-table" class="acctlgn-table-pos">
+
+					 	<tr>
+							<td class="acctlgn-label-width">{{CustIDLabel}}</td>
+							<td class="acctlgn-inp-width"><input type="text" name="cust-id" id="cust-id-fld" value=""></td>
+						</tr>
+
+					  <tr>
+							<td class="acctlgn-label-width">{{PwdLabel}}</td>
+							<td class="acctlgn-inp-width"><input type="password" name="pwd" id="pwd"
+								 value=""></td>
+						</tr>
+
+						<tr>
+							<td class="acctlgn-btn-pos" colspan="2" >
+							<div id="acntLoginid" class="ui-btn acctlgn-text-pos">{{LoginBtnLabel}}</div>
+							</td>
+						</tr> 
+
+
+					</table>
+			</div>
+
+		
+		
+		<div class="ui-grid-a acctlgn-block-width">
+			<div class="ui-block-a">
+				<label class="lgn-error-msg" id="login-error-msg"></label>
+			</div>
+			<div class="ui-block-b">
+				<a href="#" class="acctlgn-fgtpwd-pos">{{FgtPwdLabel}}</a>
+			</div>
+		</div>
+
+
+		<div class="ui-block-a acctlgn-block-width">
+		<!-- 	TODO: styling to be done as per requirement -->
+
+
+			<div class="ui-grid-a" style="margin-right: -1em;">
+				<div class="ui-block-a" id="fb-btn">
+					<a href="#" data-role="button" data-icon="acctlgnfb"
+						class="acctlgn-fb-text-pos">{{FBLabel}}</a>
+				</div>
+				<div class="ui-block-b" id="gplus-btn">
+
+					<a href="#" data-role="button" data-icon="acctlgngplus"
+						class="acctlgn-google-text-pos">{{GoogleLabel}}</a>
+
+
+				</div>
+			</div>
+		</div>
+
+	
+
+		<div class="ui-block-a acctlgn-block-width acctlgn-agrmnt-pos ">	
+			{{AgreementTxt}}<a href="#" class="acctlgn-terms">{{Terms}}</a>
+		</div>
+
+	</div> 
+	<div class="ui-grid-a acctlgn-bottom-grid-pos">
+		<div class="ui-block-a acctlgn-block-width acctlgn-noacct-pos">
+
+			<hr class="acctlgn-hrzntal-line" />
+
+			{{NoAcctLabel}}<a href="#basicregistration" class="acctlgn-terms">{{RegLabel}}</a>
+
+		</div> 
+	</div>
+
+
+</div>
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="ia-footer">
+	<div data-role="controlgroup" data-type="horizontal" class="footer">
+		<a href="#" data-role="button" data-icon="branchlocator" data-iconpos="none">{{BranchLocatorLabel}}</a>
+		<a href="#" data-role="button" data-icon="findanagent" data-iconpos="none">{{FindAnAgentLabel}}</a>
+		<a href="#" data-role="button" data-icon="callmeback" data-iconpos="none">{{CallMeBackLabel}}</a>
+		<a href="#" data-role="button" data-icon="livechat" data-iconpos="none">{{LiveChatLabel}}</a>
+	</div>
+</div> 
+

@@ -1,0 +1,82 @@
+<!--New User Registration Page2 -->
+
+<div data-role="header" class="app-header" id="reg-hdr" data-position="fixed" data-tap-toggle="false">
+	<!-- TODO: middle align the text and button -->
+	<a href="#basicregistration" class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">Back</a>
+	<h1 class="app-header-text ia-title">{{NewUserRegLabel}}</h1>
+	<a id="kyc_submit_btn" href="#acctlogin" class="ui-btn-right ia-btn-back">Submit</a>
+</div>
+<!-- /header -->
+
+ <div data-role="content" class="ui-content-reg-page">
+ 
+        <div class="reg-heading-section" id="kyc-heading">
+            <h4 style="float: left">{{KYCLOGIN}}</h4>
+        </div> 
+                  
+        <div class="reg-app-separator"></div>
+        
+ <form id="kyc-reg-form">   
+        
+        <div id="reg-pan" class="ui-field-contain">
+            <label for="pan" class="reg-form-subfields">{{PAN}}</label> 
+            <input type="text" name="pan" placeholder="AKGxxxxxxxx" id="vid_pan"> 
+            <div class="name-error-highlight" id="pan-error-highlight">
+            <img src="images/error.png" class="error-image" width="5" height="20"/>
+            </div>
+        </div> 
+
+        <div id="reg-kycdocument" class="ui-field-contain">
+            <label for="document" class="reg-form-subfields" id="id-kycform-document">{{KycDocument}}</label>
+            <div class="kyc-all-documents">
+            <label>{{IdentityProof}}</label>
+            <label class="kyc-documents">{{IdentityDocuments}}</label>
+            <img id="identity-proof-img" class="kyc-identitiy-proof-img" />
+            <a id="id-identity-proof-select-btn" data-role="button" class="kyc-reg-select-btn">Select</a>
+            <hr class="kyc-separator">
+            <label>{{AddressProof}}</label>
+            <label class="kyc-documents">{{AddressDocuments}}</label>
+            <img id="address-proof-img" class="kyc-address-proof-img" />
+            <a id="id-address-proof-select-btn" data-role="button" class="kyc-reg-select-btn">Select</a> 
+            </div>          
+        </div>
+
+        <div id="reg-userid" class="ui-field-contain">
+            <label for="userid" class="reg-form-subfields">{{UserID}}</label>
+            <input type="text" name="userid" placeholder="InsUser123" id="reg-userid-input">
+            <div class="name-error-highlight" id="userid-error-highlight">
+            <img src="images/error.png" class="error-image" width="5" height="20"/></div>
+        </div>
+        
+        <div id="reg-password" class="ui-field-contain">
+            <label for="password" class="reg-form-subfields">{{Password}}</label>
+            <input type="password" name="userid" placeholder="Pass@#567" id="vid_password">
+            <div class="name-error-highlight" id="password-error-highlight">
+            <img src="images/error.png" class="error-image" width="5" height="20"/></div>
+        </div>
+
+        <!-- TODO: proper behavior of drop down to be implemented here -->
+        <div id="reg-security-selectmenu" class="ui-field-contain kyc-security">
+            <label for="security" class="reg-form-subfields">{{SecurityQuestions}}</label>
+            <select name="security questions" class="ui-icon-carat-d">
+            <option value="nickname">{{Nickname}}</option>
+            <option value="favpet">{{FavouritePet}}</option>
+            </select>
+        </div>
+
+        <div id="reg-Answer" class="ui-field-contain">
+             <label for="answer" class="reg-form-subfields">{{Answer}}</label>
+             <input type="text" name="userid"  id="vid_answer">
+        </div>
+</form>        
+</div>
+
+
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="ia-footer">
+        <div data-role="controlgroup" data-type="horizontal" class="footer">
+            <a href="#" data-role="button" data-icon="branchlocator" data-iconpos="none">{{BranchLocatorLabel}}</a>
+            <a href="#" data-role="button" data-icon="findanagent" data-iconpos="none">{{FindAnAgentLabel}}</a>
+            <a href="#" data-role="button" data-icon="callmeback" data-iconpos="none">{{CallMeBackLabel}}</a>
+            <a href="#" data-role="button" data-icon="livechat" data-iconpos="none">{{LiveChatLabel}}</a>
+        </div>
+</div> 

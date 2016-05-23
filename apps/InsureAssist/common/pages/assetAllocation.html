@@ -1,0 +1,113 @@
+<div data-role="header" class="ui-header ia-header" data-theme="d"
+    data-position="fixed" data-tap-toggle="false">
+<a href="javascript: history.back()" class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">{{BackBtnLabel}}</a>
+
+    <h1 class="dashboard-header-text ia-title">Asset Allocation</h1>
+    <div data-role='control-group' data-type="horizontal"
+        class="ui-btn-right ia-btn-right ia-header-control-group"
+        data-inline="true" data-position="inline">
+        <a href="#" data-role="button" data-icon="notification"
+            data-iconpos="none"></a> <a href="#" data-role="button"
+            data-icon="none" data-iconpos="none"
+            class="dashboard-header-user-name">{{UsernameLabel}}</a>
+    </div>
+</div>
+<!-- /header -->
+
+
+<div data-role="content" class="ui-content">
+
+<div id="assetallocation_sidebar_container" class="app-sidebar"></div>
+
+        <div id="asset-allocation-policy" class="ui-grid-b asset-allocation">
+          <div class="ui-block-a fund-alloc-hdr" id="asset-policyno">Policy No #9848474A</div>
+          
+          <div class="ui-block-b fund-alloc-hdr" id="asset-modify">
+              <img src="images/Pencil.png" class="Pencilmodify-image"/> 
+              <a href="#">{{Modify}}</a>
+          </div>
+          
+          <div class="ui-block-c fund-alloc-hdr" id="asset-deposit">
+              <a href="#">{{Deposit}}</a>
+          </div>
+          
+        </div>
+        
+        <div id="asset-allocation-content" class="ui-grid-c asset-allocation " >
+        
+            <div class="ui-block-a asset-alloc-hdr">
+                <label id="asset-alloc-lbl-1" class="ui-grid-c asset-alloc-hdr">{{FundsCurrentlyElected}}</label>
+            </div>
+            
+            <div class="ui-block-b asset-alloc-hdr">
+                 <label id="asset-alloc-lbl-2" class="ui-grid-c asset-alloc-hdr">{{CurrentAllocation}}</label>
+            </div>
+            
+            <div class="ui-block-c asset-alloc-hdr">
+                 <label id="asset-alloc-lbl-3" class="ui-grid-c asset-alloc-hdr">{{CurrentFundValue}}</label>
+            </div>
+            
+            <div class="ui-block-d asset-alloc-hdr">
+                 <label id="asset-alloc-lbl-4" class="ui-grid-c asset-alloc-hdr">{{AnnualizedReturn}}</label>
+            </div>
+            
+            <ul id="data-list">
+            </ul>
+                     
+            <div class="asset-app-separator"></div>
+            
+            <div class="ui-block-a asset-details">
+                  <label id="asset-alloc-lbl-1f" class="ui-grid-c totalaloc">Total Allocation</label>
+            </div>
+            
+            <div class="ui-block-b asset-details">
+                  <label id="asset-alloc-lbl-2f" class="ui-grid-c current-aloc-val"></label>
+            </div>
+            
+            <div class="ui-block-c asset-details">
+                  <label id="asset-alloc-lbl-3f" class="ui-grid-c current-fund-val">2,31,000</label>
+            </div>  
+              <div id="asset-piechart" class="modify-fund-piechart">
+           </div>
+        </div>
+           
+</div>
+
+<div data-role="pop-up" id="modify-popup"  data-overlay-theme="b" data-transition="flip">
+<div>  
+    <div id="modify-fund-allocation">
+        <div id="id-modify-fund-hdr" class="ui-grid-b fund-allocation">
+            <div class="ui-block-a modify-fund-hdr" id="fund-cancel" data-role="button">{{Cancel}}</div>
+            <div class="ui-block-b modify-fund-hdr" id="fund-modify">{{ModifyPopup}}</div>
+            <div class="ui-block-c modify-fund-hdr" id="fund-submit" data-role="button">{{Submit}}</div>
+        </div>
+
+        <div id="modify-app-separator"></div>
+        
+        <div id="id-modify-add-fund">
+        <label id="modify-add-fund-lbl">{{AddFund}}</label>
+        </div>
+        
+        <ul id="popup-data">
+	     
+        </ul>
+        
+        <div id="id-modify-total-fund">
+        <label id="modify-total-fund-lbl"></label>
+        </div>
+        
+
+    </div>
+</div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+

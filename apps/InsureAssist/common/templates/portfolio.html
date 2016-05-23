@@ -1,0 +1,56 @@
+<li class="ins-listitem">
+	<div class="ui-field-contain">
+
+		<div class="ins-listitem-policyname">{{model.get("policyName")}}</div>
+		<div class="ins-listitem-policyid">#{{model.get("policyNumber")}}</div>
+		<div class="ins-listitem-policystatus">{{model.get("policyStatus")}}</div>
+
+		<div class="ins-listitem-assetvalue">
+		<div class="ins-listitem-assetvalue-label">{{lang.AssetValueLabel}}</div>
+		<div class="ins-listitem-assetvalue-value">{{model.get("assetValue")}}</div>
+		</div>
+		
+		<div class="ins-listitem-overall-gain">
+		<div class="ins-listitem-overall-gain-label">{{lang.OverallGainLabel}}</div>
+		<div class="ins-listitem-overall-gain-value">{{model.get("gainValue")}} {{model.get("gainPercent")}}%</div>
+		</div>
+
+	</div>
+		
+	<div class="ui-field-contain">
+
+		<div class="ins-listitem-secondline-date-block">
+		<div class="dashboard-listitem-date-label">{{lang.RiskCommencementDateLabel}}</div>
+		<div class="dashboard-listitem-date-value">{{model.get("policyStartDate")}}</div>
+	</div>
+
+	<div class="ins-listitem-secondline-date-block">
+		<div class="dashboard-listitem-date-label">{{lang.MaturityDateLabel}}</div>
+		<div class="dashboard-listitem-date-value">{{model.get("policyEndDate")}}</div>
+	</div>
+
+	<div class="ins-listitem-secondline-date-block">
+		<div class="dashboard-listitem-date-label">{{lang.LastPaymentDateLabel}}</div>
+		<div class="dashboard-listitem-date-value">{{model.get("lastPaymentDate")}}</div>
+	</div>
+
+	<div class="ins-listitem-secondline-date-block">
+		<div class="dashboard-listitem-date-label">{{lang.PremiumDueonLabel}}</div>
+		<div class="dashboard-listitem-date-dueon-value">{{model.get("dueDate")}}</div>
+	</div>
+
+	<div class="ins-listitem-secondline-date-block">
+		<div class="dashboard-listitem-date-label">{{lang.PremiumAmountLabel}}</div>
+		<div class="dashboard-listitem-date-value">{{model.get("policyAmount")}}</div>
+	</div>
+
+	<div class="ins-listitem-secondline-action-block">
+		<div class="dashboard-listitem-action-label">{{lang.ActionLabel}}</div>
+		<div class="dashboard-listitem-action-value">
+		<a href="#premiumpayment" class="dashboard-paynow-separator">{{lang.PayNowLabel}}</a> 
+		<a href="#assetAllocation" class="dashboard-viewalloc-label">{{lang.ViewAllocationLabel}}</a>
+		</div>
+		</div>
+	</div>
+	
+</li>

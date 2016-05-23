@@ -1,0 +1,28 @@
+<div id="quote_bottom_left_grid" class="ui-grid-a ">
+    <div id="" class="ui-block-a quote-override-left">
+        <label class="savedquote-top-label">{{lang.PlanTypeLabel}}</label> 
+        <label class="savedquote-top-content">{{model.get("policyType")}}</label>
+        
+        <div id="quote_bottom_left_grid2" class="ui-grid-a ">
+
+            <div id="" class="ui-block-a grid2-left">
+                <label class="savedquote-top-label">{{lang.DateSaveLabel}}</label> 
+                <label class="savedquote-top-content">{{model.get("savedDate")}}</label>
+            </div>
+            <div id="" class="ui-block-b grid2-right">
+
+                <label class="savedquote-top-label">{{lang.PolicyTermLabel}}</label>
+                <label class="savedquote-top-content sq-term-yrs">{{model.get("numYears")}}</label>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div id="" class="ui-block-b quote-override-right">
+
+        <label class="savedquote-top-label">{{lang.YrlyPrmLabel}}</label> 
+        <label class="yearlyprm-amt">{{model.get("annualPremium")}}</label>
+        <div class="ui-btn continue-button">{{lang.ContinueBtnLabel}}</div>
+        
+        <br>
+    </div>
+</div>

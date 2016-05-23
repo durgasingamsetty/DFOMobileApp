@@ -1,0 +1,32 @@
+{
+	"regusers":[
+		
+		{"regUser":{
+			"firstName": "Alpha",
+			"lastName": "Beta",
+			"userId": "alphabeta@in.com",
+			"password": "psaed",
+			"panNo": "ax79cw2234",
+			}
+		},
+		
+		{"regUser":{
+			"firstName": "Phi",
+			"lastName": "Theta",
+			"userId": "thetaphi@bk.com",
+			"password": "wewert",
+			"panNo": "we343dd04",
+			}
+		},
+		
+		{"regUser":{
+			"firstName": "Gama",
+			"lastName": "Epsilon",
+			"userId": "gammaepsilon@po.com",
+			"password": "ptrtyed",
+			"panNo": "po09cw3454",
+			}
+		},
+			
+	]
+}

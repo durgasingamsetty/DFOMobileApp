@@ -1,0 +1,268 @@
+<div data-role="header" class="ui-header ia-header" data-theme="d" data-position="fixed" data-tap-toggle="false">
+
+    <a href="#quote" class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">Back</a>
+    <h1 class="dashboard-header-text ia-title">Retirement And Pension Plan</h1>
+    <div data-role='control-group' data-type="horizontal" class="ui-btn-right ia-btn-right  ia-header-control-group" data-inline="true" data-position="inline">
+        <a href="#" data-role="button" data-icon="notification" data-iconpos="none"></a>
+        <a href="#" data-role="button" data-icon="none" data-iconpos="none" class="dashboard-header-user-name">{{UsernameLabel}}</a>        
+    </div>
+      
+</div>
+
+<div data-role="content" class="ui-content retirement-pension" id="retirement-pension-cont">
+
+	<div id="rtrmt_sidebar_container" class="app-sidebar"></div>
+		<!-- TODO: needs fixing -->
+		
+			<div data-role="navbar" class="fragment-navbar" id="frgmt-navbar">
+			 	<ul>
+			    	<li><a href="#" class="ui-btn-active nav-element">Key Features And Benefits</a></li>
+			        <li><a href="#" class="nav-element">Pension Calculator</a></li>
+			    </ul>
+			 </div>
+	
+
+
+	<div id="retirements-pension" class="ui-grid-a">
+
+            <div class="ui-block-a retriements-left-section" id="retirements-pension-left-section">
+
+                <div class="basic-info">
+
+                    <label class="rtrmt-basic-info-label">Basic Information</label>
+                    <a href=#userdetails><label class="rtmt-basic-info-edit-label">Edit</label></a>
+
+                </div>
+
+                <div id="retirements_mid_section">
+
+                    <div class="ui-grid-a dob-gender-info">
+
+
+                        <div class="ui-block-a">
+
+                            <label class="retirement-info-label2">Date of Birth</label>
+                            <div class="dob-cal calendar-img"><input type="date" required="required" id="rp-dob"></div>
+
+                        </div>
+
+
+                        <div class="ui-block-b">
+
+                                <label class="retirement-info-label2">Gender</label>
+
+                                     <div data-role="controlgroup" data-type="horizontal" class="gender-icons" id="rp-gender-icons">   
+                                                                
+                                        <a  id="male-icon" href="#" data-role="button" data-icon="male" class="ui-state-persist"data-iconpos="none"></a>
+                                        <a id="female-icon" href="#" data-role="button" data-icon="female"class="ui-state-persist" data-iconpos="none"></a>
+
+                                   	</div>   
+                        </div>
+
+                    </div>
+
+                    <div class="retirement-plan">
+
+                        <label class="retirement-info-label">At What age do you plan to retire?</label>
+
+                            <div data-role="rangeslider" class="custom-slider" id="retirement-plan-yrs">
+
+                                <input name="range-1a" id="age-starts"  min="18" max="75" value="31" type="range" />
+
+                                <input name="range-1b" id="age-ends"  min="18" max="75" value="60" type="range" />
+                            </div>
+                            
+                            <div class="ui-grid-b scale-details">
+                        
+                         		<div class="ui-block-a"> 
+                         			<label class="retrPlan-scale-starts-1">18</label>
+                         		</div>
+                         		
+                         		<div class="ui-block-b"> 
+                         			<label class="retrPlan-sldr-range" id="retrPlan-sldr-range-id">Policy Term 
+                         			<span id="rtrmt-policy-term-yrs"></span>
+                         			</label>
+                         		</div>
+                         		
+                         		<div class="ui-block-c"> 	
+                        			<label class="retrPlan-scale-ends-1">75</label>
+                        		</div>
+                        	
+                        	</div>
+                        
+                    </div>
+
+
+                    <div class="after-retirement">
+
+                        <label class="retirement-info-label">Expected Monthly Income after Retirement</label>
+                        
+                        <div class="custom-slider">
+                        <input type="range" name="slider-1" id="income-after-retirement" data-mini="true" data-highlight="true" value="15" min="1" max="20" />
+                        </div>
+                        
+                        <div class="ui-grid-b scale-details-1">
+                        
+                         	<div class="ui-block-a"> 
+                         		<label class="retrPlan-scale-starts">Rs.1 Lakh</label>
+                         	</div>
+                         	<div class="ui-block-b sldr-range-lbl"> 
+                         		<span id="rtrmt-monthly-income" class="retrPlan-sldr-range"></span>
+                         	</div>
+                         	
+                         	<div class="ui-block-c">
+                         		<label class=" retrPlan-scale-ends">Rs.20 Lakh</label> 
+                        	</div>
+                        	
+                        </div>
+                        
+                    </div>  
+
+
+                    <div class="retriement-plan-rates">
+
+                        <div class="ui-grid-a">
+
+                            <div class="ui-block-a life-expectancy">
+
+                                <label class="retirement-info-label2">Life Expectancy</label>
+
+                                <div class="custom-slider">
+                                <label for="slider-1"></label>
+                                <input type="range" name="slider-1" id="life-expectancy-range" data-mini="true" data-highlight="true" value="85" min="50" max="100" />   
+                                </div>
+                                
+                                <div class="ui-grid-b scale-details-2">
+                        
+		                         	<div class="ui-block-a"> 
+		                         		<label class="retrPlan-scale-starts-3">50</label>
+		                         	</div>
+		                         	
+		                         	<div class="ui-block-b sldr-range-lbl"> 	
+		                        		<span id="life-expectancy-yrs" class="retrPlan-sldr-range"></span>
+		                        	</div>
+		                        	
+		                         	<div class="ui-block-c"> 	
+		                        		<label class=" retrPlan-scale-ends-3">100</label>
+		                        	</div>
+                        	
+                        		</div>
+
+							</div>
+
+                            <div class="ui-block-b inflation-rate">
+                            
+                                <label class="retirement-info-label2">Assumed Inflation Rate</label>
+
+                                <div class="custom-slider">
+                                <input type="range" name="slider-1" id="inflation-rate-percent" data-mini="true" data-highlight="true" value="6" min="4%" max="12%" />    
+                                </div>
+                                
+                                <div class="ui-grid-b scale-details-2">
+                        
+		                         	<div class="ui-block-a"> 
+		                         		<label class="retrPlan-scale-starts-3">4%</label>
+		                         	</div>
+		                         	
+		                         	<div class="ui-block-b sldr-range-lbl"> 	
+		                        		<span id="inflation-rate-yrs" class="retrPlan-sldr-range"></span>
+		                        	</div>
+		                        	
+		                         	<div class="ui-block-c"> 	
+		                        		<label class=" retrPlan-scale-ends-3">12%</label>
+		                        	</div>
+                        	
+                        		</div>
+                        </div>
+
+                    </div> 
+
+                </div>
+
+			</div> 
+			
+            <div id="rp-contn-btn" class="contn-btn">
+                <a href="#" data-role="button" id="calculate-btn" class="ia-btn-continue">Calculate</a>
+            </div>          
+
+  </div>        
+
+        <!--    TODO: right side  -->
+
+<div class="ui-block-b retriements-right-section" id="retirements-pension-right-section">
+    
+    <div id="retirement-right-block-1">
+        <label for="premiumlbl-1" class="retirement-premium-label-1">{{OnRetirement}}</label>
+        <label for="premiumlbl-2" class="retirement-premium-label-2">{{Amount}}</label>
+        <label for="premiumlbl-3" class="retirement-premium-label-3"></label>
+    </div>
+    
+    <div id="retirement-right-block-2" class="ui-grid-a payment-cal "> 
+     
+        <div class="ui-block-a payment-cal-hdr">
+        <label id="payment-cal-lbl-1" class="ui-grid-a payment-cal-hdr">{{PaymentFrequency}}</label>
+        </div> 
+        
+        <div class="ui-block-b payment-cal-hdr">
+        <label id="payment-cal-lbl-2" class="ui-grid-a payment-cal-hdr">{{InvestmentRequired}}</label> 
+        </div> 
+        
+        <div class="ui-block-a payment-details-left">
+        <label id="payment-cal-lbl-3" class="ui-grid-a payment-cal-monthly">{{Monthly}}</label> 
+        </div>
+                
+        <div class="ui-block-b payment-details-right">
+        <label id="payment-cal-lbl-4" class="ui-grid-a payment-cal-1"></label> 
+        </div>
+        
+        <div class="ui-block-a payment-details-left">
+        <label id="payment-cal-lbl-5" class="ui-grid-a payment-cal-quaterly">{{Quarterly}}</label> 
+        </div>
+        
+        <div class="ui-block-b payment-details-right">
+        <label id="payment-cal-lbl-6" class="ui-grid-a payment-cal-2"></label> 
+        </div>
+        
+        <div class="ui-block-a payment-details-left">
+        <label id="payment-cal-lbl-7" class="ui-grid-a payment-cal-half">{{HalfYearly}}</label> 
+        </div>
+        
+        <div class="ui-block-b payment-details-right">
+        <label id="payment-cal-lbl-8" class="ui-grid-a payment-cal-3"></label> 
+        </div>
+        
+        <div class="ui-block-a payment-details-left">
+        <label id="payment-cal-lbl-9" class="ui-grid-a payment-cal-yearly">{{Yearly}}</label> 
+        </div>
+        
+        <div class="ui-block-b payment-details-right">
+        <label id="payment-cal-lbl-10" class="ui-grid-a payment-cal-4"></label> 
+        </div>
+    
+   </div>
+     
+     
+     <div id="retirement-right-block-3">
+     <a href="" data-role="button">{{BuyOnline}}</a>
+     </div>
+      
+      <div id="retirement-right-block-4" class="ui-grid-b retirement-links">
+         <a href="#" id ="rpSaveQuoteBtn" class="ui-block-a retirement-save quote-opts" data-role="button">
+         <img src="images/save.png" class="save-image" width="16" height="15"/>
+         {{SaveQuote}}
+         </a>
+          
+         <a href="#" class="ui-block-b retirement-download quote-opts" data-role="button">
+         <img src="images/download.png" class="download-image" width="18" height="15"/>
+         {{DownloadIllustration}}
+         </a>
+
+         <a href="#" class="ui-block-c retirement-share quote-opts" data-role="button">
+         <img src="images/share.png" class="share-image" width="18" height="15"/>
+         {{Share}}
+         </a> 
+    </div>      
+</div>
+
+    </div>
+</div>

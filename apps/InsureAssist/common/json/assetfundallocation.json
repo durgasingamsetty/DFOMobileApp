@@ -1,0 +1,51 @@
+{
+	"fundAllocation":[
+		
+		{"fund":{
+			"policyNumber" : "#0948474A",
+			"fundName" : "Equity Fund I",
+			"fundAllocatedPercent": "30",
+			"fundValue" : "38000",
+			"returnPercent":"17",
+			}
+		},
+		
+		{"fund":{
+			"policyNumber" : "#0948474A",
+			"fundName" : "Midcap Fund I",
+			"fundAllocatedPercent": "30",
+			"fundValue" : "38300",
+			"returnPercent":"17",
+			}
+		},
+		
+		{"fund":{
+			"policyNumber" : "#0948474A",
+			"fundName" : "Debt Fund I",
+			"fundAllocatedPercent": "20",
+			"fundValue" : "28000",
+			"returnPercent":"15",
+			}
+		},
+		
+		{"fund":{
+			"policyNumber" : "#0948474A",
+			"fundName" : "Midcap Fund II",
+			"fundAllocatedPercent": "10",
+			"fundValue" : "11000",
+			"returnPercent":"12",
+			}
+		},
+		
+		{"fund":{
+			"policyNumber" : "#0948474A",
+			"fundName" : "Largecap Fund I",
+			"fundAllocatedPercent": "10",
+			"fundValue" : "11000",
+			"returnPercent":"5",
+			}
+		},	
+	]
+	
+	
+}

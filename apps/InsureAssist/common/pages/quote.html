@@ -1,0 +1,73 @@
+<div data-role="header" class="ui-header ia-header" data-theme="d"
+    data-position="fixed" data-tap-toggle="false">
+
+    <a href="javascript: history.back()"
+        class=" ui-btn ui-btn-icon-left ui-icon-back-arrow ia-btn-back">{{BackBtnLabel}}</a>
+
+    <h1 class="dashboard-header-text ia-title">Quote</h1>
+    <div data-role='control-group' data-type="horizontal"
+        class="ui-btn-right ia-btn-right ia-header-control-group"
+        data-inline="true" data-position="inline">
+        <a href="#" data-role="button" data-icon="notification"
+            data-iconpos="none"></a> 
+        <a href="#" data-role="button" data-icon="none" data-iconpos="none"
+            class="dashboard-header-user-name">{{UsernameLabel}}</a>
+    </div>
+</div>
+
+<div data-role="content" class="ui-content">
+
+    <div id="quote_sidebar_container" class="app-sidebar"></div>
+    <div id="quote_top_section" class="ui-grid-a">
+
+        <div class="ui-block-a">
+
+            <label class="quote-heading">{{QuoteHeadingLabel}}</label> 
+            <label class="quote-subheading">{{QuoteSubHeadingLabel}}</label>
+
+            <div id="quote_top_grid" class="ui-grid-a ">
+
+                <div id="" class="ui-block-a quote-top-grid-left ">
+
+                    <a href="#retirementpension" id="pension-btn" data-role="button"
+                        class="quote-pension-btn-background quote-pension-btn-pos"> 
+                        <span class="quote-pension-text-pos">{{PensionLabel}}</span>
+                    </a>
+                    <a href="#termlifeplan" id="term-btn" data-role="button"
+                        class="quote-term-btn-background quote-term-btn-pos"> 
+                        <span class="quote-term-text-pos">{{TermLabel}}</span>
+                    </a>
+                </div>
+
+                <div id="" class="ui-block-b quote-top-grid-right">
+
+                    <a href="#" id="wlins-btn" data-role="button"
+                        class="quote-wlins-btn-background quote-wlins-btn-pos"> 
+                        <span class="quote-wlins-text-pos">{{LifeInsuranceLabel}}</span>
+                    </a> 
+                    <a href="#" id="ulip-btn" data-role="button"
+                        class="quote-ulip-btn-background quote-ulip-btn-pos"> 
+                        <span class="quote-ulip-text-pos">{{UlipLabel}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quote_bottom_section">
+
+        <div class="quote-label-pos">
+            <a href="#" data-role="button" data-disabled="true" data-icon="saved"
+                data-inline="true" data-iconpos="none"></a>
+                <span class="quote-mysaved-text-pos">{{SavedQuotesLabel}}</span>
+        </div>
+
+        <div id="quote_swiper_container" class="app-swiper">
+        	<div class="swiper-container">
+	        	<div class="swiper-wrapper">
+	        	</div>
+        	</div>
+        	<div class="swiper-pagination quote-swiper-pagination"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{
+	"calculationResults":[
+		
+		{"calculationResult":{
+			"monthly": 50000,
+			"quarterly" : 150000,
+			"halfYearly": 300000,
+			"yearly" : 600000,
+			"corpusAmount":2578590,
+			}
+		},
+		
+		{"calculationResult":{
+			"monthly": 5000,
+			"quarterly" : 15000,
+			"halfYearly": 30000,
+			"yearly" : 60000,
+			"corpusAmount":257859,
+			}
+		},
+		
+		{"calculationResult":{
+			"monthly": 8000,
+			"quarterly" : 24000,
+			"halfYearly": 48000,
+			"yearly" : 98000,
+			"corpusAmount":400000,
+			}
+		},
+		
+		{"calculationResult":{
+			"monthly": 10000,
+			"quarterly" : 30000,
+			"halfYearly": 60000,
+			"yearly" : 120000,
+			"corpusAmount":720000,
+			}
+		}
+	]
+}
